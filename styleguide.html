@@ -10,10 +10,12 @@
 
         <!-- Default css/fonts -->
         <link rel="stylesheet" href="css/defaultCss/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/defaultCss/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/navClose.css">
+        <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/navOpenAnimation.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <!-- Nav fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nova+Script|Source+Code+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nova+Script|Source+Code+Pro|Cinzel:900" rel="stylesheet">
 
         <!-- Default JS -->
 
@@ -57,12 +59,36 @@
         </div>
 
         <div class="overlayForeground">
-          <i class="fas fa-times" onclick="closeNav()"></i>
 
-          <ul>
-            <li><a> About Me </a></li>
-            <li><a> Projects </a></li>
+          <div class="foregroundHeader">
+            <div class="foregroundCross">
+              <i class="fas fa-times" onclick="closeNav()"></i>
+            </div>
+
+            <div class="foregroundLogo">
+              <p class="navTitleOpen">leor</p>
+            </div>
+
+          </div>
+
+
+          <ul class="nav_items">
+
+            <li class="nav_item about">
+              <div class="fading"></div>
+              <a class="nav_item_text about_text"> ABOUT </a>
+              <div class="hover_bk hover_about"></div>
+            </li>
+
+            <li class="nav_item project">
+              <div class="fading_reverse"></div>
+              <a class="nav_item_text project_text"> PROJECTS </a>
+              <div class="hover_bk hover_project"></div>
+            </li>
+
+            <li class="nav_item" style="background-color: blue"><a class="nav_item_text"> CONTACT </a></li>
           </ul>
+
         </div>
 
       </div>
