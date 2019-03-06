@@ -98,6 +98,10 @@
   width: 220px;
 }
 
+.contact_text {
+  width: 200px;
+}
+
 
 .about {
   background-image: url('../../../src/me.png');
@@ -107,7 +111,16 @@
 }
 
 .project {
+  /* Image from https://unsplash.com/photos/mCj7UinqOYQ */
   background-image: url('../../../src/navPro.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/* Image from https://unsplash.com/photos/FYWefC6L7Ho*/
+.contact {
+  background-image: url('../../../src/contact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;

@@ -18,6 +18,10 @@ $(document).ready(function() {
     navMouseEnter('project');
   });
 
+  $(".contact").mouseenter(function(event) {
+    navMouseEnter('contact');
+  });
+
   $(".about").mouseleave(function(event) {
     navMouseExit('about')
   });
@@ -26,11 +30,13 @@ $(document).ready(function() {
     navMouseExit('project')
   });
 
+  $(".contact").mouseleave(function(event) {
+    navMouseExit('contact')
+  });
+
 });
 
-// function openNav(event) {
-//   $('.overlayDiv').toggleClass('overlayNav');
-// }
+
 
 let openNav = (event) => {
   $('.overlayDivLeftTop').addClass('overlayNavLeftTop');
