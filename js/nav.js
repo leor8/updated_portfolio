@@ -33,6 +33,7 @@ $(document).ready(function() {
 
 
 let openNav = (event) => {
+  $('.mainNav').css('z-index', '0');
   $('.overlayDivLeftTop').addClass('overlayNavLeftTop');
   $('.overlayDivRightTop').addClass('overlayNavRightTop');
   $('.overlayDivRightBottom').addClass('overlayNavRightBottom');
@@ -56,6 +57,7 @@ let openNav = (event) => {
 }
 
 let closeNav = (event) => {
+  $('.mainNav').css('z-index', '99');
   $('.overlayDivLeftTop').removeClass('overlayNavLeftTop');
   $('.overlayDivRightTop').removeClass('overlayNavRightTop');
   $('.overlayDivRightBottom').removeClass('overlayNavRightBottom');
@@ -103,9 +105,8 @@ function mobileMouseExit(className) {
 }
 
 function mobileMouseReset(className) {
-  $("." + className + "_text").css('margin-top', '1rem');
-  $("." + className + "_text").css('padding-bottom', '0rem');
-  $("." + className + "_text").css('border-bottom', 'none');
+  $("." + className + "_text").css('margin-top', '-0.1rem');
+  // $("." + className + "_text").css('padding-bottom', '0rem');
 }
 
 function navMouseEvents() {
@@ -143,6 +144,13 @@ function navMouseEvents() {
 }
 
 function navMobile() {
+
+  // Prevent jquery mixup
+  mobileMouseExit('about');
+  mobileMouseExit('project');
+  mobileMouseExit('contact');
+
+
   $(".about").mouseenter(function(event) {
     mobileMouseEnter('about');
   });

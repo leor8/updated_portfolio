@@ -1,3 +1,135 @@
 main {
   height: 2000px;
 }
+
+.main_content {
+  padding-top: 6rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Syncopate', sans-serif;
+}
+
+p {
+  font-family: 'Major Mono Display', monospace;
+}
+
+code {
+  font-family: 'Inconsolata', monospace;
+  background-color: #eff0f1;
+  padding: .5rem;
+  display: block;
+  text-align: center;
+}
+
+.heading_1 {
+  font-size: 2rem;
+  /*border-bottom: 15px dotted black;*/
+  text-shadow: 3px 3px rgb(192, 192, 192);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.heading_1:hover {
+  text-shadow: 6px 6px rgb(212, 212, 212);
+  font-size: 2.05rem;
+
+  transition: font-size .2s, text-shadow .2s;
+}
+
+.heading_2 {
+  /*display: block;*/
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+
+
+.styleguide_title {
+  margin: auto;
+  margin-top: 3rem;
+  font-size: 2rem;
+  /*border-bottom: 15px dotted black;*/
+  text-shadow: 3px 3px rgb(192, 192, 192);
+  width: 280px;
+
+  transition: font-size .2s, text-shadow .2s;
+}
+
+.styleguide_title:hover {
+  text-shadow: 6px 6px rgb(212, 212, 212);
+  font-size: 2.05rem;
+}
+
+.styleguide_box {
+  display: block;
+  /*height: 400px;*/
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2rem;
+  border: 2px dotted black;
+  box-shadow: 6px 6px rgb(192, 192, 192);
+
+  transition: border .1s, box-shadow .1s;
+}
+
+.styleguide_box:hover {
+  border: 8px dotted black;
+
+  box-shadow: 12px 12px rgb(212, 212, 212);
+}
+
+.styleguide_section_title {
+  margin-left: 1rem;
+}
+
+.headings_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.headings_item {
+  flex: 1;
+  margin-right: 2rem;
+
+  /*height: 280px;*/
+  min-width: 180px;
+  border: 2px solid black;
+  margin-bottom: 2rem;
+
+  transition: transform .1s;
+}
+
+.headings_item:hover {
+  transform: scale(1.01);
+}
+
+.styleguide_subtitle {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.styleguide_content {
+  text-align: center;
+}
+
+.sample_code {
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+

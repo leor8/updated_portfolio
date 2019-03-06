@@ -4,6 +4,10 @@
 
   display: flex;
   position: fixed;
+  background-color: white;
+
+  /* to prevent other element on the page to overlay nav*/
+  z-index: 99;
 
   transition: background-color .5s;
 }
