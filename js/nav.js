@@ -10,29 +10,21 @@ $(document).ready(function() {
     $(".navTitle").css('color', 'black');
   });
 
-  $(".about").mouseenter(function(event) {
-    navMouseEnter('about');
+  // When page first loads, check if its mobile or desktop
+  if($(window).width() > 780) {
+    navMouseEvents();
+  }
+
+  // Whenever the screen is being resized
+  $(window).resize(function() {
+    if($(window).width() > 780) {
+      navMouseEvents();
+    } else {
+      navMobile();
+    }
   });
 
-  $(".project").mouseenter(function(event) {
-    navMouseEnter('project');
-  });
 
-  $(".contact").mouseenter(function(event) {
-    navMouseEnter('contact');
-  });
-
-  $(".about").mouseleave(function(event) {
-    navMouseExit('about')
-  });
-
-  $(".project").mouseleave(function(event) {
-    navMouseExit('project')
-  });
-
-  $(".contact").mouseleave(function(event) {
-    navMouseExit('contact')
-  });
 
 });
 
@@ -95,6 +87,60 @@ function navMouseExit(className) {
   $("." + className + "_text").css('padding-bottom', '0rem');
   $("." + className + "_text").css('border-bottom', 'none');
 }
+
+function navMouseEvents() {
+  $(".about").mouseenter(function(event) {
+    navMouseEnter('about');
+  });
+
+  $(".project").mouseenter(function(event) {
+    navMouseEnter('project');
+  });
+
+  $(".contact").mouseenter(function(event) {
+    navMouseEnter('contact');
+  });
+
+  $(".about").mouseleave(function(event) {
+    navMouseExit('about')
+  });
+
+  $(".project").mouseleave(function(event) {
+    navMouseExit('project')
+  });
+
+  $(".contact").mouseleave(function(event) {
+    navMouseExit('contact')
+  });
+}
+
+function navMobile() {
+  $(".about").mouseenter(function(event) {
+    navMouseExit('about');
+  });
+
+  $(".project").mouseenter(function(event) {
+    navMouseExit('project');
+  });
+
+  $(".contact").mouseenter(function(event) {
+    navMouseExit('contact');
+  });
+
+  $(".about").mouseleave(function(event) {
+    navMouseExit('about')
+  });
+
+  $(".project").mouseleave(function(event) {
+    navMouseExit('project')
+  });
+
+  $(".contact").mouseleave(function(event) {
+    navMouseExit('contact')
+  });
+}
+
+
 
 
 

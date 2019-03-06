@@ -1,0 +1,70 @@
+@media screen and (max-width: 779px) {
+  .nav_items {
+    flex-direction: column;
+    height: 84% !important;
+  }
+
+  .nav_item {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    /*text-align: center;*/
+    display: block;
+
+  /*
+    background-color: lightgreen*/;
+    flex: 1;
+  }
+
+  .about {
+    background-image: url('../../../src/me.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    height: 100%;
+  }
+
+  .project {
+    /* Image from https://unsplash.com/photos/mCj7UinqOYQ */
+    background-image: url('../../../src/navPro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  /* Image from https://unsplash.com/photos/FYWefC6L7Ho*/
+  .contact {
+    background-image: url('../../../src/contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .nav_item_text {
+    display: block;
+    margin: auto;
+    /*margin-bottom: 2rem;*/
+    /*padding-top: 100%;*/
+/*    position: relative;
+    bottom: -30rem;
+*/
+    margin-top: 2rem;
+    font-family: 'Cinzel', serif;
+
+    transition: bottom .5s;
+  }
+
+  .about_text {
+    width: 95px;
+  }
+
+  .project_text {
+    width: 140px;
+  }
+
+  .contact_text {
+    width: 130px;
+  }
+}

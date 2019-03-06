@@ -9,7 +9,6 @@
   cursor: pointer;
 }
 
-/* opened nav logo */
 .navTitleOpen {
   color: white;
   font-family: 'Nova Script', cursive;
@@ -38,7 +37,7 @@
 
 .overlayForegroundDisplay {
   position: fixed;
-  height: 100vw;
+  height: 100vh;
   width: 100%;
   z-index: 9999;
 
@@ -62,122 +61,111 @@
   margin-left: -2.5rem;
 }
 
-.nav_item {
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-  list-style: none;
-  width: 100px;
-  /*text-align: center;*/
-  display: block;
+@media screen and (min-width: 780px) {
 
-/*
-  background-color: lightgreen*/;
-  flex: 1;
+  .nav_item {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    width: 100px;
+    /*text-align: center;*/
+    display: block;
+
+  /*
+    background-color: lightgreen*/;
+    flex: 1;
+  }
+
+  .nav_item_text {
+    display: block;
+    margin: auto;
+    /*margin-bottom: 2rem;*/
+    /*padding-top: 100%;*/
+    position: relative;
+    bottom: -30rem;
+
+    font-size: 2.4rem;
+    font-family: 'Cinzel', serif;
+
+    transition: bottom .5s;
+  }
+
+  .about_text {
+    width: 150px;
+  }
+
+  .project_text {
+    width: 220px;
+  }
+
+  .contact_text {
+    width: 200px;
+  }
+
+
+  .about {
+    background-image: url('../../../src/me.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .project {
+    /* Image from https://unsplash.com/photos/mCj7UinqOYQ */
+    background-image: url('../../../src/navPro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  /* Image from https://unsplash.com/photos/FYWefC6L7Ho*/
+  .contact {
+    background-image: url('../../../src/contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .fading {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    transition: height .75s;
+  }
+
+  .fading_reverse {
+    position: absolute;
+
+    bottom: 0;
+    width: 33.4%;
+    height: 100%;
+    background-color: black;
+  /*  transform: translateY(0vh);*/
+    transition: height .75s;
+  }
+
+  .hover_bk {
+    margin-top: -2.8rem;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+
+    transition: background-color .5s;
+  }
+
+  .hover_bk_show {
+    margin-top: -3.9rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(112, 112, 112, 0.8);
+  }
+
+
+
+
+
+
+
 }
-
-.nav_item_text {
-  display: block;
-  margin: auto;
-  /*margin-bottom: 2rem;*/
-  /*padding-top: 100%;*/
-  position: relative;
-  bottom: -30rem;
-
-  font-size: 2.4rem;
-  font-family: 'Cinzel', serif;
-
-  transition: bottom .5s;
-}
-
-.about_text {
-  width: 150px;
-}
-
-.project_text {
-  width: 220px;
-}
-
-.contact_text {
-  width: 200px;
-}
-
-
-.about {
-  background-image: url('../../../src/me.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.project {
-  /* Image from https://unsplash.com/photos/mCj7UinqOYQ */
-  background-image: url('../../../src/navPro.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-/* Image from https://unsplash.com/photos/FYWefC6L7Ho*/
-.contact {
-  background-image: url('../../../src/contact.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.fading {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-
-  transition: height .75s;
-}
-
-.fading_reverse {
-  position: absolute;
-
-  bottom: 0;
-  width: 33.4%;
-  height: 100%;
-  background-color: black;
-/*  transform: translateY(0vh);*/
-  transition: height .75s;
-}
-
-.hover_bk {
-  margin-top: -2.8rem;
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-
-  transition: background-color .5s;
-}
-
-.hover_bk_project {
-  margin-top: -2.8rem;
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-
-  transition: background-color .5s;
-}
-
-.hover_bk_show {
-  margin-top: -3.9rem;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(112, 112, 112, 0.8);
-}
-
-.hover_bk_show_project {
-  margin-top: -3.9rem;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(112, 112, 112, 0.8);
-}
-
-
-
-
-
