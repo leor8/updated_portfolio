@@ -13,6 +13,8 @@ $(document).ready(function() {
   // When page first loads, check if its mobile or desktop
   if($(window).width() > 780) {
     navMouseEvents();
+  } else {
+    navMobile();
   }
 
   // Whenever the screen is being resized
@@ -88,55 +90,109 @@ function navMouseExit(className) {
   $("." + className + "_text").css('border-bottom', 'none');
 }
 
+function mobileMouseEnter(className) {
+  $("." + className + "_text").css('margin-top', '4rem');
+  $("." + className + "_text").css('padding-bottom', '.6rem');
+  $("." + className + "_text").css('border-bottom', '2px solid white');
+}
+
+function mobileMouseExit(className) {
+  $("." + className + "_text").css('margin-top', '2rem');
+  $("." + className + "_text").css('padding-bottom', '0rem');
+  $("." + className + "_text").css('border-bottom', 'none');
+}
+
+function mobileMouseReset(className) {
+  $("." + className + "_text").css('margin-top', '1rem');
+  $("." + className + "_text").css('padding-bottom', '0rem');
+  $("." + className + "_text").css('border-bottom', 'none');
+}
+
 function navMouseEvents() {
   $(".about").mouseenter(function(event) {
     navMouseEnter('about');
+
+    // Making sure no mobile animation would be applied
+    mobileMouseReset('about');
   });
 
   $(".project").mouseenter(function(event) {
     navMouseEnter('project');
+    mobileMouseReset('project');
   });
 
   $(".contact").mouseenter(function(event) {
     navMouseEnter('contact');
+    mobileMouseReset('contact');
   });
 
   $(".about").mouseleave(function(event) {
-    navMouseExit('about')
+    navMouseExit('about');
+    mobileMouseReset('about');
   });
 
   $(".project").mouseleave(function(event) {
-    navMouseExit('project')
+    navMouseExit('project');
+    mobileMouseReset('project');
   });
 
   $(".contact").mouseleave(function(event) {
     navMouseExit('contact')
+    mobileMouseReset('contact');
   });
 }
 
 function navMobile() {
   $(".about").mouseenter(function(event) {
-    navMouseExit('about');
+    mobileMouseEnter('about');
+  });
+
+  // For mobile version
+  $(".about").on('touchstart', function(event) {
+    mobileMouseEnter('about');
   });
 
   $(".project").mouseenter(function(event) {
-    navMouseExit('project');
+    mobileMouseEnter('project');
   });
+
+  $(".project").on('touchstart', function(event) {
+    mobileMouseEnter('project');
+  });
+
 
   $(".contact").mouseenter(function(event) {
-    navMouseExit('contact');
+    mobileMouseEnter('contact');
   });
 
+  $(".contact").on('touchstart', function(event) {
+    mobileMouseEnter('contact');
+  });
+
+
   $(".about").mouseleave(function(event) {
-    navMouseExit('about')
+    mobileMouseExit('about')
+  });
+
+  // For mobile version
+  $(".about").on('touchend', function(event) {
+    mobileMouseExit('about');
   });
 
   $(".project").mouseleave(function(event) {
-    navMouseExit('project')
+    mobileMouseExit('project')
+  });
+
+  $(".project").on('touchend', function(event) {
+    mobileMouseExit('project');
   });
 
   $(".contact").mouseleave(function(event) {
-    navMouseExit('contact')
+    mobileMouseExit('contact')
+  });
+
+  $(".contact").on('touchend', function(event) {
+    mobileMouseExit('contact');
   });
 }
 

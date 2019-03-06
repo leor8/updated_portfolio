@@ -1,7 +1,10 @@
 @media screen and (max-width: 779px) {
+  .foregroundHeader {
+    height: 80px;
+  }
   .nav_items {
     flex-direction: column;
-    height: 84% !important;
+    height: 75% !important;
   }
 
   .nav_item {
@@ -53,7 +56,7 @@
     margin-top: 2rem;
     font-family: 'Cinzel', serif;
 
-    transition: bottom .5s;
+    transition: margin-top .5s;
   }
 
   .about_text {
