@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  // To prevent code from runing everytime theres a sizeChange
+  let sizeChangedMobile = false;
+  let sizeChangedDesktop = false;
+
   $(".mainNav").mouseenter(function(event) {
     $(".fa-stream").css('color', 'white');
     $(".navTitle").css('color', 'white');
@@ -13,16 +17,22 @@ $(document).ready(function() {
   // When page first loads, check if its mobile or desktop
   if($(window).width() > 780) {
     navMouseEvents();
+    sizeChangedDesktop = true;
   } else {
     navMobile();
+    sizeChangedMobile = true;
   }
 
   // Whenever the screen is being resized
   $(window).resize(function() {
-    if($(window).width() > 780) {
+    if($(window).width() > 780 && !sizeChangedDesktop) {
       navMouseEvents();
-    } else {
+      sizeChangedDesktop = true;
+      sizeChangedMobile = false;
+    } else if (!sizeChangedMobile) {
       navMobile();
+      sizeChangedDesktop = false;
+      sizeChangedMobile = true;
     }
   });
 
@@ -109,99 +119,81 @@ function mobileMouseReset(className) {
   // $("." + className + "_text").css('padding-bottom', '0rem');
 }
 
+function navMouseReset(className) {
+  $("." + className + "_text").css('margin-top', '2rem');
+  // $("." + className + "_text").css('padding-bottom', '0rem');
+}
+
 function navMouseEvents() {
-  $(".about").mouseenter(function(event) {
+
+  // Resetting mobile jquery events and css
+  mobileMouseReset("about");
+  mobileMouseReset("project");
+  mobileMouseReset("contact");
+  $(".about").unbind();
+  $(".contact").unbind();
+  $(".project").unbind();
+
+  $(".about").bind("mouseenter", function(event) {
     navMouseEnter('about');
-
-    // Making sure no mobile animation would be applied
-    mobileMouseReset('about');
   });
 
-  $(".project").mouseenter(function(event) {
-    navMouseEnter('project');
-    mobileMouseReset('project');
-  });
-
-  $(".contact").mouseenter(function(event) {
-    navMouseEnter('contact');
-    mobileMouseReset('contact');
-  });
-
-  $(".about").mouseleave(function(event) {
+  $(".about").bind("mouseleave", function(event) {
     navMouseExit('about');
-    mobileMouseReset('about');
   });
 
-  $(".project").mouseleave(function(event) {
+  $(".project").bind("mouseenter", function(event) {
+    navMouseEnter('project');
+  });
+
+  $(".project").bind("mouseleave", function(event) {
     navMouseExit('project');
-    mobileMouseReset('project');
   });
 
-  $(".contact").mouseleave(function(event) {
-    navMouseExit('contact')
-    mobileMouseReset('contact');
+  $(".contact").bind("mouseenter", function(event) {
+    navMouseEnter('contact');
   });
+
+  $(".contact").bind("mouseleave", function(event) {
+    navMouseExit('contact');
+  });
+
 }
 
 function navMobile() {
 
-  // Prevent jquery mixup
-  mobileMouseExit('about');
-  mobileMouseExit('project');
-  mobileMouseExit('contact');
+  navMouseReset('about');
+  navMouseReset('project');
+  navMouseReset('contact');
+  $(".about").unbind();
+  $(".project").unbind();
+  $(".contact").unbind();
 
-
-  $(".about").mouseenter(function(event) {
+  $(".about").bind("mouseenter touchstart", function(event) {
     mobileMouseEnter('about');
   });
 
-  // For mobile version
-  $(".about").on('touchstart', function(event) {
-    mobileMouseEnter('about');
-  });
-
-  $(".project").mouseenter(function(event) {
-    mobileMouseEnter('project');
-  });
-
-  $(".project").on('touchstart', function(event) {
-    mobileMouseEnter('project');
-  });
-
-
-  $(".contact").mouseenter(function(event) {
-    mobileMouseEnter('contact');
-  });
-
-  $(".contact").on('touchstart', function(event) {
-    mobileMouseEnter('contact');
-  });
-
-
-  $(".about").mouseleave(function(event) {
-    mobileMouseExit('about')
-  });
-
-  // For mobile version
-  $(".about").on('touchend', function(event) {
+  $(".about").bind("mouseleave touchend", function(event) {
     mobileMouseExit('about');
   });
 
-  $(".project").mouseleave(function(event) {
-    mobileMouseExit('project')
+  $(".project").bind("mouseenter touchstart", function(event) {
+    mobileMouseEnter('project');
   });
 
-  $(".project").on('touchend', function(event) {
+  $(".project").bind("mouseleave touchend", function(event) {
     mobileMouseExit('project');
   });
 
-  $(".contact").mouseleave(function(event) {
-    mobileMouseExit('contact')
+  $(".contact").bind("mouseenter touchstart", function(event) {
+    mobileMouseEnter('contact');
   });
 
-  $(".contact").on('touchend', function(event) {
+  $(".contact").bind("mouseleave touchend", function(event) {
     mobileMouseExit('contact');
   });
+
+
 }
 
 
