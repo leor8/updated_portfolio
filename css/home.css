@@ -1,3 +1,241 @@
 .main_content {
   height: 3000px;
 }
+
+.main_headings {
+  margin-top: 2rem;
+}
+
+.about_overall {
+  margin: auto;
+  max-width: 400px;
+  line-height: 26px;
+  text-decoration: underline red;
+  padding: .5rem;
+  border: 4px dotted red;
+
+  transition: background-color .5s;
+}
+
+.about_overall:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.lanterns {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.lantern {
+  flex: 1;
+  width: 200px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+
+  transform: scale(0.8);
+
+  transition: transform .5s;
+}
+
+.lantern:hover {
+  transform: scale(0.9);
+}
+
+.lantern_dangle {
+  height: 100px;
+  width: 1px;
+  border-right: 6px dashed red;
+
+  margin: auto;
+}
+
+.lantern_top {
+  height: 10px;
+  width: 40px;
+  border-radius: 40%;
+  background-color: gold;
+  margin: auto;
+}
+
+.lantern_content {
+  background-color: darkorange;
+
+  margin: auto;
+  border-radius: 40%;
+  height: 140px;
+  width: 150px;
+
+  transition: background-color 1s;
+}
+
+.lantern_content:hover {
+  background-color: orange;
+}
+
+.lantern_dangle_bottom {
+  height: 25px;
+  width: 1px;
+  border-right: 6px dashed red;
+
+  margin: auto;
+}
+
+.content_title {
+  font-size: .7rem;
+  position: relative;
+  top: 3.3rem;
+  left: 1.8rem;
+
+  margin: 0;
+}
+
+
+
+.lantern_bottom_circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: gold;
+  margin: auto;
+}
+
+.lantern_bottom_line {
+  height: 25px;
+  width: 1px;
+  border: 2px dotted red;
+  margin: auto;
+}
+
+.display_ground_hide_frontend {
+  display: none;
+}
+
+.display_ground_hide_backend {
+  display: none;
+}
+
+.display_ground_hide_android {
+  display: none;
+}
+
+.display_ground_hide_game {
+  display: none;
+}
+
+
+.display_ground_frontend {
+  margin: auto;
+
+  display: block;
+  height: 350px;
+  min-width: 300px;
+  max-width: 600px;
+
+  border-top: 6px dotted red;
+  border-right: 6px dotted green;
+  border-bottom: 6px dotted blue;
+  border-left: 6px dotted orange;
+
+  background-color: rgb(255, 100, 100);
+}
+
+.display_ground_backend {
+  margin: auto;
+
+  display: block;
+  height: 350px;
+  min-width: 300px;
+  max-width: 600px;
+
+  border-top: 6px dotted red;
+  border-right: 6px dotted green;
+  border-bottom: 6px dotted blue;
+  border-left: 6px dotted orange;
+
+  background-color: rgb(10, 235, 10);
+}
+
+.display_ground_android {
+  margin: auto;
+
+  display: block;
+  height: 300px;
+  min-width: 300px;
+  max-width: 600px;
+
+  border-top: 6px dotted red;
+  border-right: 6px dotted green;
+  border-bottom: 6px dotted blue;
+  border-left: 6px dotted orange;
+
+  background-color: rgb(200, 200, 255);
+}
+
+.display_ground_game {
+  margin: auto;
+
+  display: block;
+  height: 360px;
+  min-width: 320px;
+  max-width: 600px;
+
+  border-top: 6px dotted red;
+  border-right: 6px dotted green;
+  border-bottom: 6px dotted blue;
+  border-left: 6px dotted orange;
+
+  background-color: rgb(255,165,0);
+}
+
+.display_ground_title {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  /*font-size: 2vw;*/
+}
+
+.display_ground_text {
+  max-width: 400px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  line-height: 24px;
+}
+
+.bold {
+  font-size: 1.2rem;
+}
+
+.display_ground_btn {
+  margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

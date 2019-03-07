@@ -18,6 +18,8 @@
   width: 0;
   height: 0;
   transition: all .5s;
+
+  z-index: 99;
 }
 
 .overlayDivRightBottom {
@@ -27,6 +29,8 @@
   width: 0;
   height: 0;
   transition: all .5s;
+
+  z-index: 99;
 }
 
 .overlayDivLeftBottom {
@@ -37,6 +41,8 @@
   width: 0;
   height: 0;
   transition: all .5s;
+
+  z-index: 99;
 }
 
 
@@ -47,6 +53,8 @@
   height: 50vh;
   /*z-index: 2;*/
   transition: all .5s;
+
+  z-index: 99;
 }
 
 .overlayNavRightTop {

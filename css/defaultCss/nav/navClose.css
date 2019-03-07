@@ -17,13 +17,13 @@
 }
 
 /* Hamburger menu*/
-.fa-stream {
+.fa-gamepad {
   font-size: 2.7rem;
   cursor: pointer;
   transition: color .5s;
 }
 
-.fa-stream:hover, .fa-stream:focus {
+.fa-gamepad:hover, .fa-gamepad:focus {
   /* Overriding js added inlinestyle */
   color: lightgray !important;
 }

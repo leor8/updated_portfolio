@@ -5,12 +5,12 @@ $(document).ready(function() {
   let sizeChangedDesktop = false;
 
   $(".mainNav").mouseenter(function(event) {
-    $(".fa-stream").css('color', 'white');
+    $(".fa-gamepad").css('color', 'white');
     $(".navTitle").css('color', 'white');
   });
 
   $(".mainNav").mouseleave(function(event) {
-    $(".fa-stream").css('color', 'black');
+    $(".fa-gamepad").css('color', 'black');
     $(".navTitle").css('color', 'black');
   });
 

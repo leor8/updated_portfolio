@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main_content {
   padding-top: 6rem;
 }
@@ -21,4 +27,49 @@ code {
   padding: .5rem;
   display: block;
   text-align: center;
+}
+
+/* H1 */
+.heading_1 {
+  font-size: 2rem;
+  /*border-bottom: 15px dotted black;*/
+  text-shadow: 3px 3px rgb(192, 192, 192);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.heading_1:hover {
+  text-shadow: 6px 6px rgb(212, 212, 212);
+  font-size: 2.05rem;
+
+  transition: font-size .2s, text-shadow .2s;
+}
+
+.basic_btn {
+  padding: .5rem;
+  font-size: .8rem;
+  margin: auto;
+  display: block;
+  outline: none;
+  margin-bottom: 1.5rem;
+  /*border: 3px dotted black;*/
+  border-top: 4px dotted red;
+  border-left: 4px dotted green;
+  border-bottom: 4px dotted blue;
+  border-right: 4px dotted orange;
+
+  transition: border-top .25s, border-right .5s, border-bottom .75s, border-left 1s;
+}
+
+.basic_btn:hover, .basic_btn:focus {
+  border-top: 4px solid green;
+  border-left: 4px solid red;
+  border-bottom: 4px solid orange;
+  border-right: 4px solid blue;
+}
+
+.basic_btn:active {
+  background-color: black;
+  color: white;
 }
