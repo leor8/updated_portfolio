@@ -20,7 +20,7 @@ $(document).ready(function() {
     imageAsLinkExit();
   });
 
-
+  $(".return_top_btn").on('click', scrollToSection('click'));
 });
 
 function imageAsLink() {
@@ -33,4 +33,12 @@ function imageAsLinkExit() {
   $('.image_link').css('filter', 'none');
   $('.hover_image_text').removeClass('hover_image_text_show');
   $('.hover_image_text').css('display', 'none');
+}
+
+function scrollToSection(event) {
+  event.preventDefault();
+  var $section = $($(this).attr('href'));
+  $('html, body').animate({
+    scrollTop: $section.offset().top
+  }, 500);
 }

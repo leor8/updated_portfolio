@@ -10,6 +10,7 @@
 
         <!-- Default css/fonts -->
         <link rel="stylesheet" href="css/defaultCss/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/defaultCss/main.css">
         <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/nav.css">
         <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/navMobile.css">
         <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/navClose.css">
@@ -23,8 +24,8 @@
 
         <!-- JQuery CDN -->
         <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
         <script type="text/javascript" src="js/nav.js"></script>
@@ -101,7 +102,7 @@
       </div>
 
 
-      <main class="main_content">
+      <main class="main_content" id="top">
         <h1 class="styleguide_title">Styleguide</h1>
 
         <section class="styleguide_box">
@@ -215,26 +216,28 @@
       </main>
 
       <footer>
-        <div class="return_top_btn">
+        <a class="return_top_btn" href="#top">
           <i class="fas fa-angle-double-up"></i>
-        </div>
+        </a>
 
         <div class="footer_icons">
-          <div class="footer_icon footer_git">
+
+          <a class="footer_icon footer_git" href="https://github.com/leor8">
             <i class="fab fa-github footer_icon_content"></i>
-          </div>
+          </a>
 
-          <div class="footer_icon footer_linkedin">
+
+          <a class="footer_icon footer_linkedin" href="https://www.linkedin.com/in/leor8/">
             <i class="fab fa-linkedin-in footer_icon_content"></i>
-          </div>
+          </a>
 
-          <div class="footer_icon footer_email">
+          <a class="footer_icon footer_email" href = "mailto: leo442183205@gmail.com">
             <i class="far fa-envelope footer_icon_content"></i>
-          </div>
+          </a>
 
-          <div class="footer_icon footer_phone">
+          <a class="footer_icon footer_phone" href="tel: +1778-8466861">
             <i class="fas fa-phone footer_icon_content"></i>
-          </div>
+          </a>
 
         </div>
 

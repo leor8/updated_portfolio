@@ -1,0 +1,24 @@
+.main_content {
+  padding-top: 6rem;
+}
+
+/*Default fonts */
+h1, h2, h3, h4 {
+  font-family: 'Syncopate', sans-serif;
+}
+
+p, a, input {
+  font-family: 'Raleway', sans-serif;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+}
+
+code {
+  font-family: 'Inconsolata', monospace;
+  background-color: #eff0f1;
+  padding: .5rem;
+  display: block;
+  text-align: center;
+}
