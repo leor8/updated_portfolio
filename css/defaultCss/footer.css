@@ -61,8 +61,27 @@ footer {
   transition: background-color .5s;
 }
 
+
 .footer_git:hover {
   background-color: red;
+  position: relative;
+  top: -1rem;
+}
+
+.footer_linkedin:hover {
+  background-color: green;
+  position: relative;
+  top: -1rem;
+}
+
+.footer_email:hover {
+  background-color: purple;
+  position: relative;
+  top: -1rem;
+}
+
+.footer_phone:hover {
+  background-color: darkorange;
   position: relative;
   top: -1rem;
 }

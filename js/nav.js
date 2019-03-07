@@ -43,6 +43,7 @@ $(document).ready(function() {
 
 
 let openNav = (event) => {
+  // event.preventDefault();
   $('.mainNav').css('z-index', '0');
   $('.overlayDivLeftTop').addClass('overlayNavLeftTop');
   $('.overlayDivRightTop').addClass('overlayNavRightTop');
@@ -58,10 +59,9 @@ let openNav = (event) => {
     $('.fading_reverse').css('height', '0');
   }, 500);
 
-  // Disable scrolling code from https://stackoverflow.com/questions/3656592/how-to-programmatically-disable-page-scrolling-with-jquery
+  // Disable scrolling code modified from https://stackoverflow.com/questions/3656592/how-to-programmatically-disable-page-scrolling-with-jquery
   $('html, body').css({
     overflow: 'hidden',
-    height: '100%'
   });
 
 }
@@ -78,10 +78,9 @@ let closeNav = (event) => {
   // $('.fading_reverse').css('transform', 'translateY(-100vh)');
   $('.fading_reverse').css('height', '100%');
   $('.mainNav').css('z-index', '99');
-  // Enable scrolling code from https://stackoverflow.com/questions/3656592/how-to-programmatically-disable-page-scrolling-with-jquery
+  // Enable scrolling code modified from https://stackoverflow.com/questions/3656592/how-to-programmatically-disable-page-scrolling-with-jquery
   $('html, body').css({
     overflow: 'auto',
-    height: 'auto'
   });
 }
 
