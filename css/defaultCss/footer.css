@@ -4,5 +4,91 @@ footer {
   width: 100%;
   background-color: black;
 
-  margin-top: 5rem;
+  margin-top: 8rem;
+
+  /*margin-bottom: 28rem;*/
 }
+
+.return_top_btn {
+  display: block;
+  margin: auto;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  position: relative;
+  top: -1.6rem;
+  transition: top .5s;
+}
+
+.return_top_btn:hover {
+  top: -2.6rem;
+}
+
+.fab, .fas, .far {
+  display: block !important;
+  text-align: center;
+}
+
+.fa-angle-double-up {
+  color: rgb(230, 230, 230);
+  font-size: 3rem;
+
+
+  transform: rotate(-45deg);
+}
+
+.footer_icons {
+  display: flex;
+  max-width: 300px;
+  height: 60px;
+  margin: auto;
+  margin-top: 1rem;
+  /*border: 1px solid rgb(100, 100, 100);*/
+}
+
+.footer_icon {
+  flex: 1;
+  margin-left: .5rem;
+  margin-right: .5rem;
+
+  cursor: pointer;
+  background-color: rgb(100, 100, 100);
+
+  transition: background-color .5s;
+}
+
+.footer_git:hover {
+  background-color: red;
+  position: relative;
+  top: -1rem;
+}
+
+
+.footer_icon_content {
+  color: white;
+  font-size: 2rem;
+
+  margin-top: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

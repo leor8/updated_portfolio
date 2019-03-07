@@ -137,6 +137,7 @@ code {
 .styleguide_content {
   text-align: center;
   font-family: 'Major Mono Display', monospace;
+  font-size: .8rem;
 
   word-break: break-all;
   padding: 0 1rem;
@@ -150,6 +151,7 @@ code {
 
 .basic_btn {
   padding: .5rem;
+  font-size: .8rem;
   margin: auto;
   display: block;
   outline: none;
