@@ -98,6 +98,22 @@ footer {
 }
 
 
+.copyright {
+  color: white;
+  font-size: .7rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  text-align: right;
+}
+
+.footer_link {
+  color: white;
+  /*text-decoration: none;*/
+}
+
+.footer_link:hover, .footer_link:focus {
+  color: lightgray;
+}
 
 
 
