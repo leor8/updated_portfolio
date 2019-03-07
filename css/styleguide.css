@@ -1,17 +1,22 @@
 main {
-  height: 2000px;
+  /*height: 6000px;*/
 }
 
 .main_content {
   padding-top: 6rem;
 }
 
+/*Default fonts */
 h1, h2, h3, h4 {
   font-family: 'Syncopate', sans-serif;
 }
 
-p {
-  font-family: 'Major Mono Display', monospace;
+p, a, input {
+  font-family: 'Raleway', sans-serif;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
 }
 
 code {
@@ -22,6 +27,7 @@ code {
   text-align: center;
 }
 
+/* H1 */
 .heading_1 {
   font-size: 2rem;
   /*border-bottom: 15px dotted black;*/
@@ -38,6 +44,7 @@ code {
   transition: font-size .2s, text-shadow .2s;
 }
 
+/* h2*/
 .heading_2 {
   /*display: block;*/
   text-align: center;
@@ -46,7 +53,7 @@ code {
 }
 
 
-
+/* h3 section title*/
 .styleguide_title {
   margin: auto;
   margin-top: 3rem;
@@ -63,30 +70,41 @@ code {
   font-size: 2.05rem;
 }
 
+/*Section container*/
 .styleguide_box {
   display: block;
-  /*height: 400px;*/
+
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 2rem;
-  border: 2px dotted black;
+
+  border-top: 2px dotted red;
+  border-left: 2px dotted green;
+  border-bottom: 2px dotted blue;
+  border-right: 2px dotted orange;
+
   box-shadow: 6px 6px rgb(192, 192, 192);
 
-  transition: border .1s, box-shadow .1s;
+  transition: border-top .1s, border-right .25s, border-bottom .35s, border-left .4s, box-shadow .1s;
 }
 
 .styleguide_box:hover {
-  border: 8px dotted black;
+
+  border-top: 8px dotted green;
+  border-left: 8px dotted red;
+  border-bottom: 8px dotted orange;
+  border-right: 8px dotted blue;
 
   box-shadow: 12px 12px rgb(212, 212, 212);
 }
+
 
 .styleguide_section_title {
   margin-left: 1rem;
 }
 
-.headings_container {
+.styleguide_section_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -95,7 +113,7 @@ code {
   margin-right: 3rem;
 }
 
-.headings_item {
+.styleguide_section_item {
   flex: 1;
   margin-right: 2rem;
 
@@ -107,7 +125,7 @@ code {
   transition: transform .1s;
 }
 
-.headings_item:hover {
+.styleguide_section_item:hover {
   transform: scale(1.01);
 }
 
@@ -118,13 +136,144 @@ code {
 
 .styleguide_content {
   text-align: center;
+  font-family: 'Major Mono Display', monospace;
+
+  word-break: break-all;
+  padding: 0 1rem;
 }
 
+/* Code using word-wrap to avoid overflow*/
 .sample_code {
   margin-bottom: 1rem;
   word-wrap: break-word;
 }
 
+.basic_btn {
+  padding: .5rem;
+  margin: auto;
+  display: block;
+  outline: none;
+  margin-bottom: 1.5rem;
+  /*border: 3px dotted black;*/
+  border-top: 4px dotted red;
+  border-left: 4px dotted green;
+  border-bottom: 4px dotted blue;
+  border-right: 4px dotted orange;
+
+  transition: border-top .25s, border-right .5s, border-bottom .75s, border-left 1s;
+}
+
+.basic_btn:hover, .basic_btn:focus {
+  border-top: 4px solid green;
+  border-left: 4px solid red;
+  border-bottom: 4px solid orange;
+  border-right: 4px solid blue;
+}
+
+.basic_btn:active {
+  background-color: black;
+  color: white;
+}
+
+.paragraphs {
+  text-align: center;
+}
+
+.text_link {
+  display: block;
+  margin: auto;
+  width: 90px;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid blue;
+
+  padding: .2rem;
+
+}
+
+.text_link:hover, .text_link:focus {
+  border: 1px dotted black;
+  /*background-color: black;*/
+  color: black;
+}
+
+.text_link:active {
+  background-color: black;
+  color: white;
+}
+
+.image_link_container {
+  width: 160px;
+  height: 160px;
+  display: block;
+  margin: auto;
+
+  text-decoration: none;
+}
+
+.image_link {
+  max-width: 160px;
+  height: auto;
+
+  transition: filter .2s;
+}
+
+.hover_image_text {
+  display: none;
+}
+
+.hover_image_text_show {
+  font-size: 1.7rem;
+  position: relative;
+  top: -5.5rem;
+  left: 1.2rem;
+  color: white;
+  margin-bottom: 0 !important;
+}
+
+.text_input {
+  background-color: rgba(57, 63, 84, 0.8);
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: .5rem;
+  color: white;
+
+  display: block;
+  margin: auto;
+
+  max-width: 140px;
+
+  transition: border-top .2s, border-left .2s, border-bottom .2s, border-right .2s, background-color .2s;
+}
+
+/* Input colour change code mordified from https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder */
+.text_input::placeholder {
+  color: rgba(147, 156, 174);
+}
+
+.text_input:focus, .text_input:hover {
+  background-color: white;
+
+  border-top: 2px dotted red;
+  border-left: 2px dotted green;
+  border-bottom: 4px solid blue;
+  border-right: 2px dotted orange;
+
+  color: black;
+}
+
+/*.text_input_button {
+  display: inline;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.fa-arrow-right {
+  padding-top: 2rem;
+}*/
 
 
 

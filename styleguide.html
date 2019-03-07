@@ -14,9 +14,10 @@
         <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/navMobile.css">
         <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/navClose.css">
         <link rel="stylesheet" type="text/css" href="css/defaultCss/nav/navOpenAnimation.css">
+        <link rel="stylesheet" type="text/css" href="css/defaultCss/footer.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <!-- Nav fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nova+Script|Major+Mono+Display|Cinzel:900|Syncopate:700|Inconsolata" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nova+Script|Major+Mono+Display|Syncopate:700|Inconsolata|Press+Start+2P|Raleway" rel="stylesheet">
 
         <!-- Default JS -->
 
@@ -27,6 +28,7 @@
         crossorigin="anonymous"></script>
 
         <script type="text/javascript" src="js/nav.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
 
 
         <!-- Page specific css -->
@@ -104,36 +106,117 @@
 
         <section class="styleguide_box">
           <h2 class="styleguide_section_title">Headings</h2>
-          <div class="headings_container">
+          <div class="styleguide_section_container">
 
             <!-- Each item displaying heading info -->
-            <div class="headings_item">
+            <div class="styleguide_section_item">
               <h3 class="styleguide_subtitle">Rendered element</h3>
               <h4 class="heading_1">h1</h4>
               <h3 class="styleguide_subtitle">CSS Selector</h3>
               <p class="styleguide_content"> .heading_1 </p>
               <h3 class="styleguide_subtitle">Code</h3>
-              <code class="sample_code">&lt;h1 class="heading_1"&gt;h1&lt;/h1&gt;</code>
+              <code class="sample_code">&lt;h1 class="heading_1"&gt; h1 &lt;/h1&gt;</code>
             </div>
 
-            <div class="headings_item">
+            <div class="styleguide_section_item">
               <h3 class="styleguide_subtitle">Rendered element</h3>
               <h4 class="heading_2">h2</h4>
               <h3 class="styleguide_subtitle">CSS Selector</h3>
               <p class="styleguide_content"> .heading_2 </p>
               <h3 class="styleguide_subtitle">Code</h3>
-              <code class="sample_code">&lt;h2 class="heading_2"&gt;h2&lt;/h2&gt;</code>
+              <code class="sample_code">&lt;h2 class="heading_2"&gt; h2 &lt;/h2&gt;</code>
             </div>
           </div>
         </section>
 
+        <!-- This sections is for buttons -->
         <section class="styleguide_box">
-          <h2 class="styleguide_section_title">Nav Item</h2>
+          <h2 class="styleguide_section_title">Button</h2>
+          <div class="styleguide_section_container">
+            <div class="styleguide_section_item">
+              <h3 class="styleguide_subtitle">Rendered element</h3>
+              <button class="basic_btn">Button</button>
+              <h3 class="styleguide_subtitle">CSS Selector</h3>
+              <p class="styleguide_content"> .basic_btn </p>
+              <h3 class="styleguide_subtitle">Code</h3>
+              <code class="sample_code">&lt;button class="basic_btn"&gt; button &lt;/button&gt;</code>
+            </div>
+          </div>
+        </section>
+
+        <!-- This sections is for pagaragh -->
+        <section class="styleguide_box">
+          <h2 class="styleguide_section_title">Text</h2>
+          <div class="styleguide_section_container">
+            <div class="styleguide_section_item">
+              <h3 class="styleguide_subtitle">Rendered element</h3>
+              <p class="paragraphs">this is a sample paragraph</p>
+              <h3 class="styleguide_subtitle">CSS Selector</h3>
+              <p class="styleguide_content"> .paragraphs </p>
+              <h3 class="styleguide_subtitle">Code</h3>
+              <code class="sample_code">&lt;p class="paragraphs"&gt; this is a sample paragraph &lt;/p&gt;</code>
+            </div>
+          </div>
+        </section>
+
+        <!-- This sections is for link -->
+        <section class="styleguide_box">
+          <h2 class="styleguide_section_title">Link</h2>
+          <div class="styleguide_section_container">
+            <div class="styleguide_section_item">
+              <h3 class="styleguide_subtitle">Rendered element</h3>
+              <a href="http://www.google.ca" class="text_link">This is a link</a>
+              <h3 class="styleguide_subtitle">CSS Selector</h3>
+              <p class="styleguide_content"> .text_link </p>
+              <h3 class="styleguide_subtitle">Code</h3>
+              <code class="sample_code">&lt;a class="text_link"&gt; This is a link &lt;/a&gt;</code>
+            </div>
+          </div>
+        </section>
+
+        <!-- This sections is for image as link -->
+        <section class="styleguide_box">
+          <h2 class="styleguide_section_title">Link</h2>
+          <div class="styleguide_section_container">
+            <div class="styleguide_section_item">
+              <h3 class="styleguide_subtitle">Rendered element</h3>
+              <a href="http://www.google.ca" class="image_link_container">
+                <img src="src/contact.jpg" class="image_link"></image>
+                <p class="hover_image_text">An image</p>
+              </a>
+              <h3 class="styleguide_subtitle">CSS Selector</h3>
+
+              <!-- br tags are used here to format text so no css would be requireds -->
+              <p class="styleguide_content"> .image_link_container (container) <br><br> .image_link (image) <br><br> .hover_image_text (text) </p>
+              <h3 class="styleguide_subtitle">Code</h3>
+              <code class="sample_code">&lt;a class="image_link_container"&gt; <br><br>
+                &lt;img src="src/contact.jpg" class="image_link"&gt;&lt;/image&gt; <br>
+                &lt;p class="hover_image_text"&gt;An image&lt;/p&gt; <br><br>
+               &lt;/a&gt;</code>
+            </div>
+          </div>
+        </section>
+
+        <!-- This sections is for input box -->
+        <section class="styleguide_box">
+          <h2 class="styleguide_section_title">Input box</h2>
+          <div class="styleguide_section_container">
+            <div class="styleguide_section_item">
+              <h3 class="styleguide_subtitle">Rendered element</h3>
+              <input type="text" name="text" placeholder="hint" class="text_input">
+              <h3 class="styleguide_subtitle">CSS Selector</h3>
+              <p class="styleguide_content"> .text_input </p>
+              <h3 class="styleguide_subtitle">Code</h3>
+              <code class="sample_code">&lt;input type="text" name="text" placeholder="hint" class="text_input"&gt;</code>
+            </div>
+          </div>
         </section>
 
       </main>
 
+      <footer>
 
+      </footer>
 
     </body>
 </html>

@@ -25,11 +25,11 @@ $(document).ready(function() {
 
   // Whenever the screen is being resized
   $(window).resize(function() {
-    if($(window).width() > 780 && !sizeChangedDesktop) {
+    if($(window).width() >= 780 && !sizeChangedDesktop) {
       navMouseEvents();
       sizeChangedDesktop = true;
       sizeChangedMobile = false;
-    } else if (!sizeChangedMobile) {
+    } else if ($(window).width() < 780 && !sizeChangedMobile) {
       navMobile();
       sizeChangedDesktop = false;
       sizeChangedMobile = true;
@@ -67,7 +67,7 @@ let openNav = (event) => {
 }
 
 let closeNav = (event) => {
-  $('.mainNav').css('z-index', '99');
+  $('.overlayForegroundDisplay').removeClass('overlayForegroundDisplay').addClass('overlayForeground');
   $('.overlayDivLeftTop').removeClass('overlayNavLeftTop');
   $('.overlayDivRightTop').removeClass('overlayNavRightTop');
   $('.overlayDivRightBottom').removeClass('overlayNavRightBottom');
@@ -77,9 +77,7 @@ let closeNav = (event) => {
   $('.fading').css('height', '100%');
   // $('.fading_reverse').css('transform', 'translateY(-100vh)');
   $('.fading_reverse').css('height', '100%');
-
-  $('.overlayForegroundDisplay').removeClass('overlayForegroundDisplay').addClass('overlayForeground');
-
+  $('.mainNav').css('z-index', '99');
   // Enable scrolling code from https://stackoverflow.com/questions/3656592/how-to-programmatically-disable-page-scrolling-with-jquery
   $('html, body').css({
     overflow: 'auto',

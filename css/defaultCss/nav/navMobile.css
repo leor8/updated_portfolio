@@ -54,20 +54,20 @@
     bottom: -30rem;
 */
     margin-top: 2rem;
-    font-family: 'Cinzel', serif;
+    font-family: 'Syncopate', sans-serif;
 
     transition: margin-top .5s;
   }
 
   .about_text {
-    width: 95px;
+    width: 115px;
   }
 
   .project_text {
-    width: 140px;
+    width: 165px;
   }
 
   .contact_text {
-    width: 130px;
+    width: 150px;
   }
 }
