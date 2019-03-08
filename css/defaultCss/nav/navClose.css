@@ -17,13 +17,13 @@
 }
 
 /* Hamburger menu*/
-.fa-gamepad {
+.fa-bars {
   font-size: 2.7rem;
   cursor: pointer;
   transition: color .5s;
 }
 
-.fa-gamepad:hover, .fa-gamepad:focus {
+.fa-bars:hover, .fa-bars:focus {
   /* Overriding js added inlinestyle */
   color: lightgray !important;
 }

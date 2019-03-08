@@ -1,0 +1,339 @@
+/*
+.about_overall {
+  margin: auto;
+  max-width: 400px;
+  line-height: 26px;
+  text-decoration: underline red;
+  padding: .5rem;
+  border: 4px dotted red;
+
+  transition: background-color .5s;
+}
+
+.about_overall:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.lanterns {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.lantern {
+  flex: 1;
+  width: 200px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+
+  transform: scale(0.8);
+
+  transition: transform .5s;
+}
+
+.lantern:hover {
+  transform: scale(0.9);
+}
+
+.lantern_dangle {
+  height: 100px;
+  width: 1px;
+  border-right: 6px dashed red;
+
+  margin: auto;
+}
+
+.lantern_top {
+  height: 10px;
+  width: 40px;
+  border-radius: 40%;
+  background-color: gold;
+  margin: auto;
+}
+
+.lantern_content {
+  background-color: darkorange;
+
+  margin: auto;
+  border-radius: 40%;
+  height: 140px;
+  width: 150px;
+
+  transition: background-color 1s;
+}
+
+.lantern_content:hover {
+  background-color: orange;
+}
+
+.lantern_dangle_bottom {
+  height: 25px;
+  width: 1px;
+  border-right: 6px dashed red;
+
+  margin: auto;
+}
+
+.content_title {
+  font-size: .7rem;
+  position: relative;
+  top: 3.3rem;
+  left: 1.8rem;
+
+  margin: 0;
+}
+
+
+
+.lantern_bottom_circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: gold;
+  margin: auto;
+}
+
+.lantern_bottom_line {
+  height: 25px;
+  width: 1px;
+  border: 2px dotted red;
+  margin: auto;
+}
+
+
+
+*/
+
+#about {
+  margin-top: 4rem;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: auto;
+
+  max-width: 400px;
+  /*height: 200px;*/
+}
+
+
+.skill {
+  flex: 1;
+
+  margin-left: .8rem;
+  margin-right: .8rem;
+
+  background-color: lightgray;
+
+  height: 50px;
+  width: 80px;
+
+  cursor: pointer;
+
+  box-shadow: 3px 3px lightgray;
+
+  transition: transform .5s;
+}
+
+.skill:hover {
+  transform: rotate(45deg);
+}
+
+.about_icon {
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+
+
+.bold {
+  font-size: 1.2rem;
+}
+
+.display_ground_btn {
+  margin-top: 1.5rem;
+  bottom: 2rem;
+}
+
+.display_more {
+  width: 88px;
+  background-color: white;
+  text-decoration: none;
+  user-select: none;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.display_container {
+  margin: auto;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.display_ground_hide_about{
+  display: none;
+}
+
+
+.display_ground_hide_frontend {
+  display: none;
+}
+
+.display_ground_hide_backend {
+  display: none;
+}
+
+.display_ground_hide_android {
+  display: none;
+}
+
+.display_ground_hide_game {
+  display: none;
+}
+
+.display_ground_about {
+  margin: auto;
+
+  display: block;
+  min-width: 220px;
+  max-width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+
+  box-shadow: 5px 5px darkgray;
+
+  background-color: lightgray;
+
+  /*Enter animation*/
+
+
+  /*transition: transform 1.5s;*/
+}
+
+
+.display_ground_frontend {
+  margin: auto;
+
+  display: block;
+  min-width: 220px;
+  max-width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+
+  box-shadow: 5px 5px darkgray;
+
+  background-color: rgb(255, 100, 100);
+}
+
+.display_ground_backend {
+  margin: auto;
+
+  display: block;
+  min-width: 220px;
+  max-width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+
+  box-shadow: 5px 5px darkgray;
+
+  background-color: lightgreen;
+}
+
+.display_ground_android {
+  margin: auto;
+
+  display: block;
+  min-width: 220px;
+  max-width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+
+  box-shadow: 5px 5px darkgray;
+
+  background-color: lightblue;
+}
+
+.display_ground_game {
+  margin: auto;
+
+  display: block;
+  min-width: 220px;
+  max-width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+
+  box-shadow: 5px 5px darkgray;
+
+  background-color: orange;
+}
+
+.display_ground_title {
+  margin-left: 1rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  /*font-size: 2vw;*/
+}
+
+.display_ground_text {
+  max-width: 400px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  line-height: 24px;
+}
+
+
+
+.frontend {
+  background-color: red;
+}
+
+.backend {
+  background-color: lightgreen;
+}
+
+.backend:hover {
+  transform: rotate(-45deg);
+}
+
+.mobile {
+  background-color: skyblue;
+}
+
+.game {
+  background-color: orange;
+}
+
+.game:hover {
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

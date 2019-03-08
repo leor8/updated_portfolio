@@ -35,6 +35,8 @@
 
         <!-- Page specific css -->
         <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="css/about.css">
+        <link rel="stylesheet" type="text/css" href="css/project.css">
 
 
     </head>
@@ -42,8 +44,7 @@
       <!-- Page common nav -->
       <nav class="mainNav">
         <div class="navDashesContainer" onclick="openNav()">
-          <!-- <i class="fas fa-stream"></i> -->
-          <i class="fas fa-gamepad"></i>
+          <i class="fas fa-bars"></i>
         </div>
 
         <div class="navTitleContainer">
@@ -86,11 +87,11 @@
               <div class="hover_bk hover_about"></div>
             </a>
 
-            <li class="nav_item project">
+            <a class="nav_item project" href="index.html#project" onclick="closeNav()"">
               <div class="fading_reverse"></div>
               <h2 class="nav_item_text project_text"> PROJECTS </h2>
               <div class="hover_bk hover_project"></div>
-            </li>
+            </a>
 
             <li class="nav_item contact">
               <div class="fading"></div>
@@ -105,12 +106,76 @@
 
 
       <main class="main_content" id="top">
-        <section id="about">
+        <section id="about" class="section_box">
           <h1 class="heading_1 main_headings"> About </h1>
 
-          <p class="about_overall"> Hi, I'm Leo, a full stack developer/software developer based in Vancouver BC Canada. I am extremely passion about building projects that are user-friendly and full of surprising interactions while being fully functioning.  </p>
+          <div class="skills">
+            <div class="skill frontend">
+              <i class="fas fa-code about_icon"></i>
+            </div>
 
-          <div class=lanterns>
+            <div class="skill backend">
+              <i class="fab fa-node-js about_icon"></i>
+            </div>
+
+            <div class="skill mobile">
+              <i class="fas fa-mobile-alt about_icon"></i>
+            </div>
+
+            <div class="skill game">
+              <i class="fas fa-gamepad about_icon"></i>
+            </div>
+
+
+          </div>
+          <div class="display_container">
+
+            <div class="display_ground_hide_about display_ground_about">
+              <h3 class="display_ground_title">Leo Ruan (AKA. Me) </h3>
+
+              <p class="display_ground_text"> Hi, I'm Leo, a full stack developer/software developer based in Vancouver BC Canada. I am extremely passion about building projects that are user-friendly and full of surprising interactions while being fully functioning. </p>
+
+              <a class="basic_btn display_ground_btn display_more" href="#project">Explore</a>
+            </div>
+
+
+            <div class="display_ground_hide_frontend">
+              <h3 class="display_ground_title">Front End Developer</h3>
+
+              <p class="display_ground_text"> I am experienced with front end development including <b class="bold"> HTML5, CSS3, SASS, pure JavaScript, Jquery, Reactjs and Ruby on Rails </b>. I am a huge fan of developing neat and clean animations. </p>
+
+              <button class="basic_btn display_ground_btn">Understand</button>
+            </div>
+
+             <div class="display_ground_hide_backend">
+              <h3 class="display_ground_title">Back End Developer</h3>
+
+              <p class="display_ground_text"> I have been involved in numbers of backend projects, <b class="bold"> Nodejs, Firebase and Ruby on Rails </b>. Together with my front end and database skills I am fully capable of building any application. </p>
+
+              <button class="basic_btn display_ground_btn">Understand</button>
+            </div>
+
+            <div class="display_ground_hide_android">
+              <h3 class="display_ground_title">Android Developer</h3>
+
+              <p class="display_ground_text"> I recently fell in love with android development, <b class="bold"> Android Studio (Java) and React Native </b> are both really fun to work with in terms of designing and developing an android application </p>
+
+              <button class="basic_btn display_ground_btn">Understand</button>
+            </div>
+
+            <div class="display_ground_hide_game">
+              <h3 class="display_ground_title">Game Developer</h3>
+
+              <p class="display_ground_text"> I have course related course experience working as a game developer while also considering game's design perspetive. <b class="bold"> Unity (C#) and Java/Processing </b>. I understand how game should be designed in terms of player interactions and game level/fun designs.  </p>
+
+              <button class="basic_btn display_ground_btn">Understand</button>
+            </div>
+          </div>
+
+
+          <!-- <p class="about_overall"> Hi, I'm Leo, a full stack developer/software developer based in Vancouver BC Canada. I am extremely passion about building projects that are user-friendly and full of surprising interactions while being fully functioning.  </p> -->
+
+ <!--          <div class=lanterns>
             <div class="lantern front_end">
               <div class="lantern_dangle">
               </div>
@@ -136,13 +201,7 @@
 
             </div>
 
-            <div class="display_ground_hide_frontend">
-              <h3 class="display_ground_title">Front End Developer</h3>
 
-              <p class="display_ground_text"> I am experienced with front end development including <b class="bold"> HTML5, CSS3, SAAS, pure JavaScript, Jquery, Reactjs and Ruby on Rails </b>. I am a huge fan of developing neat and clean animations. </p>
-
-              <button class="basic_btn display_ground_btn">Understand</button>
-            </div>
 
             <div class="lantern back_end">
               <div class="lantern_dangle">
@@ -169,13 +228,7 @@
 
             </div>
 
-            <div class="display_ground_hide_backend">
-              <h3 class="display_ground_title">Back End Developer</h3>
 
-              <p class="display_ground_text"> I have been involved in numbers of backend projects, <b class="bold"> Nodejs, Firebase and Ruby on Rails </b>. Together with my front end and database skills I am fully capable of building any application. </p>
-
-              <button class="basic_btn display_ground_btn">Understand</button>
-            </div>
 
             <div class="lantern android">
               <div class="lantern_dangle">
@@ -202,13 +255,7 @@
 
             </div>
 
-            <div class="display_ground_hide_android">
-              <h3 class="display_ground_title">Android Developer</h3>
 
-              <p class="display_ground_text"> I recently fell in love with android development, <b class="bold"> Android Studio (Java) and React Native </b> are both really fun to work with in terms of designing and developing an android application </p>
-
-              <button class="basic_btn display_ground_btn">Understand</button>
-            </div>
 
             <div class="lantern game">
               <div class="lantern_dangle">
@@ -234,19 +281,23 @@
               </div>
             </div>
 
-            <div class="display_ground_hide_game">
-              <h3 class="display_ground_title">Game Developer</h3>
 
-              <p class="display_ground_text"> I have course related course experience working as a game developer while also considering game's design perspetive. <b class="bold"> Unity (C#) and Java/Processing </b>. I understand how game should be designed in terms of player interactions and game level/fun designs.  </p>
-
-              <button class="basic_btn display_ground_btn">Understand</button>
-            </div>
 
             </div>
-          </div>
+          </div> -->
 
         </section>
 
+        <section id="project">
+          <h2 class="heading_1">Project</h2>
+          <select>
+            <option value="frontend">Front End Projects</option>
+            <option value="backend">Back End Projects</option>
+            <option value="mobile">Mobile Projects</option>
+            <option value="game">Game Projects</option>
+          </select>
+
+        </section>
       </main>
 
       <footer>

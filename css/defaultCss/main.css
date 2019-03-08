@@ -2,6 +2,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  tap-highlight-color: transparent;
+  outline: none;
+}
+
+section {
+  tap-highlight-color: transparent;
+  outline: none;
 }
 
 .main_content {
@@ -72,4 +79,33 @@ code {
 .basic_btn:active {
   background-color: black;
   color: white;
+}
+
+/*Section container*/
+.section_box {
+  display: block;
+
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2rem;
+
+  border-top: 2px dotted red;
+  border-left: 2px dotted green;
+  border-bottom: 2px dotted blue;
+  border-right: 2px dotted orange;
+
+  box-shadow: 6px 6px rgb(192, 192, 192);
+
+  transition: border-top .1s, border-right .25s, border-bottom .35s, border-left .4s, box-shadow .1s;
+}
+
+.section_box:hover {
+
+  border-top: 8px dotted green;
+  border-left: 8px dotted red;
+  border-bottom: 8px dotted orange;
+  border-right: 8px dotted blue;
+
+  box-shadow: 12px 12px rgb(212, 212, 212);
 }

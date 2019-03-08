@@ -5,12 +5,12 @@ $(document).ready(function() {
   let sizeChangedDesktop = false;
 
   $(".mainNav").mouseenter(function(event) {
-    $(".fa-gamepad").css('color', 'white');
+    $(".fa-bars").css('color', 'white');
     $(".navTitle").css('color', 'white');
   });
 
   $(".mainNav").mouseleave(function(event) {
-    $(".fa-gamepad").css('color', 'black');
+    $(".fa-bars").css('color', 'black');
     $(".navTitle").css('color', 'black');
   });
 
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 let openNav = (event) => {
   // event.preventDefault();
-  $('.mainNav').css('z-index', '0');
+  $('.mainNav').css('z-index', '2');
   $('.overlayDivLeftTop').addClass('overlayNavLeftTop');
   $('.overlayDivRightTop').addClass('overlayNavRightTop');
   $('.overlayDivRightBottom').addClass('overlayNavRightBottom');
