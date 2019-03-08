@@ -6,6 +6,7 @@ $(document).ready(function() {
 
 
   $(".frontend").on('click', function() {
+    // If front has not yet been clicked, front div will be visible and all other divs will not be visible with border around front div icon
     if(!frontendClicked) {
       $('.display_ground_hide_backend').removeClass('display_ground_backend');
       $('.display_ground_hide_android').removeClass('display_ground_android');
@@ -23,6 +24,7 @@ $(document).ready(function() {
       mobileClicked = false;
       gameClicked = false;
     } else {
+      // If front has been clicked, front div will go invisible and about me will be visible
       frontendClicked = false;
       $('.display_ground_hide_frontend').toggleClass('display_ground_frontend');
       $('.display_ground_hide_about').addClass('display_ground_about');
@@ -130,6 +132,7 @@ function homeOpenAnimation() {
   }, 100);
 }
 
+// Remove all visible display and display about me
 function closeAllDisplayGround() {
   $('.display_ground_hide_backend').removeClass('display_ground_backend');
   $('.display_ground_hide_frontend').removeClass('display_ground_frontend');
