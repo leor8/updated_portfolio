@@ -1,6 +1,8 @@
 #about {
   margin-top: 4rem;
 }
+
+/* Skill box container*/
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +13,7 @@
   /*height: 200px;*/
 }
 
-
+/* Each skill container with icon inside*/
 .skill {
   flex: 1;
 
@@ -34,22 +36,25 @@
   transform: rotate(45deg);
 }
 
+/* Changing the size of skill icons */
 .about_icon {
   font-size: 2rem;
   padding: .5rem;
 }
 
-
-
+/* Enlarge text with bold class */
 .bold {
   font-size: 1.2rem;
 }
+
+/* placing disply area's button */
 
 .display_ground_btn {
   margin-top: 1.5rem;
   bottom: 2rem;
 }
 
+/* Styling a tag that looks like a button*/
 .display_more {
   width: 88px;
   background-color: white;
@@ -65,6 +70,7 @@
   padding-right: 1rem;
 }
 
+/* When the div is hidden*/
 .display_ground_hide_about{
   display: none;
 }
@@ -86,6 +92,7 @@
   display: none;
 }
 
+/* When div is currently visible*/
 .display_ground_about {
   margin: auto;
 
@@ -99,11 +106,6 @@
   box-shadow: 5px 5px darkgray;
 
   background-color: lightgray;
-
-  /*Enter animation*/
-
-
-  /*transition: transform 1.5s;*/
 }
 
 
@@ -183,7 +185,7 @@
 }
 
 
-
+/* Background colour and animations for icons*/
 .frontend {
   background-color: red;
 }
