@@ -1,3 +1,102 @@
 #project {
   margin-top: 5rem;
+  padding-top: 7rem;
 }
+
+.skill_options {
+  border-top: 4px dotted red;
+  border-left: 4px dotted green;
+  border-bottom: 4px dotted blue;
+  border-right: 4px dotted orange;
+
+  display: block;
+  margin: auto;
+
+  font-size: .7rem;
+  height: 30px;
+  outline: none;
+
+  margin-bottom: 2rem;
+}
+
+.project_display {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+
+  max-width: 80%;
+}
+
+.singleProeject {
+  border-top: 6px dotted red;
+  border-left: 6px dotted green;
+  border-bottom: 6px dotted blue;
+  border-right: 6px dotted orange;
+
+  min-width: 200px;
+  height: 250px;
+
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  flex: 1 0 28%;
+
+  transition: border-top .5s, border-left .5s, border-bottom .5s, border-right .5s;
+}
+
+.marketbuddy {
+  background-image: url("https://github.com/leor8/Market-Buddy-Web/raw/master/docs/Screen%20Shot%202018-08-10%20at%202.04.31%20PM.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.singleProeject:hover {
+  border-top: 6px dotted green;
+  border-left: 6px dotted blue;
+  border-bottom: 6px dotted orange;
+  border-right: 6px dotted red;
+}
+
+.hover_project_display {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project_title {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.project_details {
+  margin-top: 5rem;
+}
+
+.project_stack {
+  text-align: center;
+
+}
+
+.project_detail_display {
+  display: fixed !important;
+  top: -20rem;
+
+  width: 100%;
+  height: 400px;
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
