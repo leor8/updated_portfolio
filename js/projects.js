@@ -11,7 +11,7 @@ $(document).ready(function() {
                             </div>
 
                             <div class="project_details">
-                              <p class=project_stack> ${stackFormatter(currProject.projectCategory)} </p>
+                              <p class=project_stack> ${stackFormatter(currProject.projectStack)} </p>
                               <button class="basic_btn" onclick="openDetail('${eachProject}')">Learn More</button>
                             </div>
                           </div>
@@ -48,8 +48,34 @@ $(document).ready(function() {
 function openDetail(projectIndex) {
   let currProject = allProjects[projectIndex];
 
+  // Empty previously added html element
+  $(".project_detail_hide").empty();
+
+  let $detail = `<section class="project_detail_section">
+                    <div class="project_image"></div>
+                    <h3> ${currProject.projectName} </h3>
+                    <p> ${currProject.projectDescription} </p>
+                </section>`
+
+  $(".project_detail_hide").append($detail);
+
+  // <section class="project_detail_section">
+  //             <div class="project_image"></div>
+  //             <h3>Market Buddy</h3>
+  //             <p>Market Buddy is an application that allows user to select grocery products </p>
+  //           </section>
+
   $(".project_detail_hide").toggleClass('display_project_detail');
   $(".project_image").css("background-image", `url("${currProject.projectImageURL}"`);
+
+  // If anywhere on the screen is clicked when page detail is opened
+  $(".display_project_detail").on('click touch', function(event) {
+    if(event.target.className == 'project_detail_hide display_project_detail') {
+      console.log("here");
+      $(".project_detail_hide").removeClass('display_project_detail');
+    }
+
+  })
 }
 
 

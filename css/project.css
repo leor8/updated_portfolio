@@ -109,36 +109,32 @@
 }
 
 /* Using media query to create different popup box */
-@media screen and (min-width: 600px) {
-  .project_detail_section {
-
-    margin: auto;
-    margin-top: -1.2rem;
-    width: 70%;
-    height: 600px;
-    background-color: red;
-  }
+.project_detail_section {
+  margin: auto;
+  margin-top: -1.2rem;
+  width: 70%;
+  height: 600px;
+  background-color: white;
 }
 
-@media screen and (max-width: 599px) {
-  .project_detail_section {
-
-    margin: auto;
-    margin-top: 16rem;
-    width: 80%;
-    height: 300px;
-    background-color: red;
-  }
-}
 
 .project_image {
-  /*background-image: url("https://github.com/leor8/Market-Buddy-Web/raw/master/docs/Screen%20Shot%202018-08-10%20at%202.04.31%20PM.png");*/
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-
+  background-position: top center;
+  border-bottom: 8px solid black;
   height: 60%;
   width: 100%;
+}
+
+.project_detail_section > h3 {
+  margin-left: 1rem;
+}
+
+.project_detail_section > p {
+  width: 60%;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 

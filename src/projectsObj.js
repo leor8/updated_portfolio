@@ -2,7 +2,7 @@ let allProjects = {
   0: {
     projectName: "Market Buddy",
     projectClassName: "marketbuddy",
-    projectDescription: "A Smart money saving grocery shopping list maker for everyday use. Our app compares different prices in different grocery stories for the same product. You can construct a shopping list and compare the prices with all grocery stores nearby before you decide where to go for your day to day grocery shops.",
+    projectDescription: "A Smart money saving grocery shopping list maker for everyday use. Our app compares different prices in different grocery stores for the same product. You can construct a shopping list and compare the prices with all grocery stores nearby before you decide where to go for your day to day grocery shops.",
     projectImageURL: "https://github.com/leor8/Market-Buddy-Web/raw/master/docs/Screen%20Shot%202018-08-10%20at%202.04.31%20PM.png",
     projectGitURL: "https://github.com/leor8/Market-Buddy-Web",
     projectStack: ["node.js", "react.js", "scss"],
@@ -12,7 +12,7 @@ let allProjects = {
   1: {
     projectName: "Market Buddy Android",
     projectClassName: "marketbuddyAndroid",
-    projectDescription: "A Smart money saving android APP grocery shopping list maker for everyday use. Our app compares different prices in different grocery stories for the same product. You can construct a shopping list and compare the prices with all grocery stores nearby before you decide where to go for your day to day grocery shops.",
+    projectDescription: "A Smart money saving android APP grocery shopping list maker for everyday use. Our app compares different prices in different grocery stores for the same product. You can construct a shopping list and compare the prices with all grocery stores nearby before you decide where to go for your day to day grocery shops.",
     projectImageURL: "src/android_market.png",
     projectGitURL: "https://github.com/leor8/Market-Buddy-Android",
     projectStack: ["Java"],
