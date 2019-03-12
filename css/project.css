@@ -37,6 +37,7 @@
   border-right: 6px dotted orange;
 
   min-width: 300px;
+  max-width: 500px;
 
   height: 250px;
 
@@ -50,7 +51,7 @@
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
 }
 
 /*.marketbuddy {
@@ -87,7 +88,7 @@
 
 .project_details {
   margin-top: 3rem;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .project_stack {

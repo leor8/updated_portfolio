@@ -6,7 +6,7 @@ let allProjects = {
     projectImageURL: "https://github.com/leor8/Market-Buddy-Web/raw/master/docs/Screen%20Shot%202018-08-10%20at%202.04.31%20PM.png",
     projectGitURL: "https://github.com/leor8/Market-Buddy-Web",
     projectStack: ["node.js", "react.js", "scss"],
-    projectCategory: ["frontend", "backend"],
+    projectCategory: ["backend"],
     projectHTML: "projects/marketBuddy.html"
   } ,
   1: {
@@ -55,7 +55,7 @@ let allProjects = {
     projectImageURL: "https://github.com/leor8/tweeter/raw/master/docs/WechatIMG694.jpeg?raw=true",
     projectGitURL: "https://github.com/leor8/tweeter",
     projectStack: ["HTML", "CSS", "node.js"],
-    projectCategory: ["frontend", "backend"],
+    projectCategory: ["frontend"],
     projectHTML: "projects/tweeter.html"
   },
   5: {
