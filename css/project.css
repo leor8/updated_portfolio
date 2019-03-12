@@ -22,6 +22,8 @@
 .project_display {
   display: flex;
   flex-wrap: wrap;
+  /*justify-content: flex-start;*/
+
 
   margin: 0 auto;
 
@@ -34,19 +36,21 @@
   border-bottom: 6px dotted blue;
   border-right: 6px dotted orange;
 
-  min-width: 200px;
+  min-width: 300px;
+
   height: 250px;
 
   margin: auto;
+  /*margin-left: auto;*/
   background-color: rgba(0, 0, 0, 0.6);
-
-  flex: 1 0 28%;
+  flex-grow: 1;
+  flex-basis: 30%;
 
   transition: border-top .5s, border-left .5s, border-bottom .5s, border-right .5s;
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
 
 /*.marketbuddy {
@@ -78,12 +82,12 @@
 .project_title {
   padding-top: 1rem;
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .project_details {
   margin-top: 3rem;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .project_stack {
@@ -113,7 +117,7 @@
   margin: auto;
   margin-top: -1.2rem;
   width: 70%;
-  height: 600px;
+  height: 550px;
   background-color: white;
 }
 
@@ -121,9 +125,9 @@
 .project_image {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
-  border-bottom: 8px solid black;
-  height: 60%;
+  background-position: center;
+  border-top: 4px solid black;
+  height: 50%;
   width: 100%;
 }
 
@@ -137,7 +141,28 @@
   margin-top: 2rem;
 }
 
+.display_btns {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
 
+.more {
+  flex: 1;
+  margin: auto;
+  background-color: skyblue;
+
+  max-width: 150px;
+
+}
+
+.exit {
+  flex: 1;
+  background-color: rgb(255, 130, 130);
+  margin: auto;
+  max-width: 150px;
+}
 
 
 
