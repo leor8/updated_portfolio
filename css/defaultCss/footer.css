@@ -77,7 +77,7 @@ footer {
   transition: background-color .5s;
 }
 
-
+/* Icon hover/focus animation indicators */
 .footer_git:hover, .footer_git:focus {
   background-color: red;
   position: relative;
@@ -119,9 +119,9 @@ footer {
   text-align: right;
 }
 
+/* Copy right link*/
 .footer_link {
   color: white;
-  /*text-decoration: none;*/
 }
 
 .footer_link:hover, .footer_link:focus {

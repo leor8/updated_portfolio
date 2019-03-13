@@ -1,11 +1,13 @@
+/* Breakpoint when the screen is too small to fit in three columns*/
 @media screen and (max-width: 779px) {
   /* The header when nav bar is fully opened*/
   .foregroundHeader {
     height: 80px;
   }
+  /*Changing the */
   .nav_items {
     flex-direction: column;
-    height: 80% !important;
+    height: 90% !important;
   }
 
   .nav_item {
@@ -19,6 +21,7 @@
     flex: 1;
   }
 
+  /*Adding background images*/
   .about {
     background-image: url('../../../src/me.png');
     background-size: cover;
@@ -46,17 +49,14 @@
   .nav_item_text {
     display: block;
     margin: auto;
-    /*margin-bottom: 2rem;*/
-    /*padding-top: 100%;*/
-/*    position: relative;
-    bottom: -30rem;
-*/
+
     margin-top: 2rem;
     font-family: 'Syncopate', sans-serif;
 
     transition: margin-top .5s;
   }
 
+  /*Setting text width based on how long is the word*/
   .about_text {
     width: 115px;
   }

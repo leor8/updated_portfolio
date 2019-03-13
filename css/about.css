@@ -32,7 +32,8 @@
   transition: transform .5s;
 }
 
-.skill:hover {
+/*Rotate clockwise when skill is hovered*/
+.skill:hover, .skill:focus {
   transform: rotate(45deg);
 }
 
@@ -74,8 +75,6 @@
 .display_ground_hide_about{
   display: none;
 }
-
-
 .display_ground_hide_frontend {
   display: none;
 }
@@ -91,6 +90,7 @@
 .display_ground_hide_game {
   display: none;
 }
+
 
 /* When div is currently visible*/
 .display_ground_about {
@@ -194,7 +194,8 @@
   background-color: lightgreen;
 }
 
-.backend:hover {
+/* Rotate counterclockwise when icon is hovered*/
+.backend:hover, .backend:focus {
   transform: rotate(-45deg);
 }
 
@@ -206,7 +207,8 @@
   background-color: orange;
 }
 
-.game:hover {
+/* Rotate counterclockwise when icon is hovered*/
+.game:hover, .game:focus {
   transform: rotate(-45deg);
 }
 

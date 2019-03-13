@@ -1,16 +1,17 @@
+/*Resetting browswer defaults*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  tap-highlight-color: transparent;
   outline: none;
 }
 
+/* Removing smooth scrolling highlight on sections*/
 section {
-  tap-highlight-color: transparent;
   outline: none;
 }
 
+/* Skip fixed nav bar*/
 .main_content {
   padding-top: 6rem;
 }
@@ -46,21 +47,24 @@ code {
   text-align: center;
 }
 
-.heading_1:hover {
+.heading_1:hover, .heading_1:focus {
   text-shadow: 6px 6px rgb(212, 212, 212);
   font-size: 2.05rem;
 
   transition: font-size .2s, text-shadow .2s;
 }
 
+/* button styling*/
 .basic_btn {
   padding: .5rem;
   font-size: .8rem;
+
+  /*centering button*/
   margin: auto;
   display: block;
   outline: none;
   margin-bottom: 1.5rem;
-  /*border: 3px dotted black;*/
+
   border-top: 4px dotted red;
   border-left: 4px dotted green;
   border-bottom: 4px dotted blue;
@@ -100,7 +104,7 @@ code {
   transition: border-top .1s, border-right .25s, border-bottom .35s, border-left .4s, box-shadow .1s;
 }
 
-.section_box:hover {
+.section_box:hover, .section_box:focus {
 
   border-top: 8px dotted green;
   border-left: 8px dotted red;

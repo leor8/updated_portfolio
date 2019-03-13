@@ -1,14 +1,15 @@
 #contact {
+  /*Adding margin-top for smooth scrolling due to fixed nav*/
   margin-top: 5rem;
 }
 
 .contact_form > div {
-  /*border: 2px solid black;*/
+  /* Making sure there will be space on both right and left of the form container */
   margin-right: 1rem;
   margin-left: 1rem;
 }
 
-
+/* default settings for labels and textinputs */
 .contact_form_label {
   font-size: .9rem;
   display: block;
@@ -19,16 +20,18 @@
   text-align: center;
 }
 
+/* Overriding default width of input box*/
 .contact_input {
-  width: 265px;
-  max-width: 265px;
+  width: 205px;
+  max-width: 205px;
   margin-bottom: 2rem;
 }
 
+/* Giving textarea extraheight*/
 .contact_textarea {
   height: 120px;
 }
-
+/* Centering p tag when form is successfully submitted */
 .messageReceived > p {
   text-align: center;
   margin-bottom: 3rem;

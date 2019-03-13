@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.contact_submit').on("click", function(event) {
     // Prevent page from going up
     event.preventDefault();
-    console.log(emailValidation($('#inquery_email').val()));
+
     //  Form validation
     if($('#inquery_name').val() != "" && $('#inquery_email').val() != "") {
 
@@ -21,9 +21,9 @@ $(document).ready(function() {
       }
 
     } else if ($('#inquery_name').val() == "") {
-      // alert("Please enter your name.");
+      alert("Please enter your name.");
     } else if ($('#inquery_email').val() == "") {
-      // alert("Please enter your email address.");
+      alert("Please enter your email address.");
     }
 
   });

@@ -111,7 +111,7 @@ function constructingProjects(currProject, eachProject) {
     $(`.${currProject.projectClassName} > .project_hover`).toggleClass('hover_project_display');
   });
 
-  $(`.${currProject.projectClassName}`).on("touchstart", function(event) {
+  $(`.${currProject.projectClassName}`).on("touchstart focus", function(event) {
     /* Act on the event */
     $(`.${currProject.projectClassName} > .project_hover`).toggleClass('hover_project_display');
   });

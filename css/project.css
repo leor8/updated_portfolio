@@ -1,9 +1,11 @@
+/* Project section */
 #project {
   margin-top: 5rem;
   margin-bottom: 8rem;
   padding-top: 7rem;
 }
 
+/* styling the select box*/
 .skill_options {
   border-top: 4px dotted red;
   border-left: 4px dotted green;
@@ -20,30 +22,29 @@
   margin-bottom: 2rem;
 }
 
+/* Declaring project container*/
 .project_display {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: flex-start;*/
-
 
   margin: 0 auto;
 
   max-width: 80%;
 }
 
+/* Setting up the style of each project*/
 .singleProeject {
   border-top: 6px dotted red;
   border-left: 6px dotted green;
   border-bottom: 6px dotted blue;
   border-right: 6px dotted orange;
 
-  min-width: 300px;
+  min-width: 250px;
   max-width: 500px;
 
   height: 250px;
 
   margin: auto;
-  /*margin-left: auto;*/
   background-color: rgba(0, 0, 0, 0.6);
   flex-grow: 1;
   flex-basis: 30%;
@@ -55,18 +56,15 @@
   background-position: center;
 }
 
-/*.marketbuddy {
-  background-image: url("https://github.com/leor8/Market-Buddy-Web/raw/master/docs/Screen%20Shot%202018-08-10%20at%202.04.31%20PM.png");
-
-}*/
-
-.singleProeject:hover {
+/* Project hove animation*/
+.singleProeject:hover, .singleProeject:focus {
   border-top: 6px dotted green;
   border-left: 6px dotted blue;
   border-bottom: 6px dotted orange;
   border-right: 6px dotted red;
 }
 
+/* The overlay block element on top of each project (not showing) */
 .project_hover {
   background-color: transparent;
   height: 0px;
@@ -74,6 +72,7 @@
   transition: width .25s;
 }
 
+/* The overlay block element on top of each project (showing) */
 .hover_project_display {
   background-color: rgba(255, 255, 255, 0.9);
   display: block;
@@ -81,27 +80,31 @@
   width: 100%;
 }
 
+/* Title when project box is hovered*/
 .project_title {
   padding-top: 1rem;
   text-align: center;
   overflow: auto;
 }
 
+/* detail section when project box is hovered*/
 .project_details {
   margin-top: 3rem;
   overflow: auto;
 }
 
+/* stack info when project box is hovered*/
 .project_stack {
   text-align: center;
 
 }
 
+/* When learnmore is not clicked*/
 .project_detail_hide {
   display: none;
 }
 
-
+/* When learnmore is clicked and block element is showing */
 .display_project_detail {
   display: block;
   position: fixed;
@@ -123,7 +126,7 @@
   background-color: white;
 }
 
-
+/* Setting the top part of project detail display box's background image setting*/
 .project_image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,6 +135,7 @@
   height: 50%;
   width: 100%;
 }
+
 
 .project_detail_section > h3 {
   margin-left: 1rem;
@@ -143,6 +147,7 @@
   margin-top: 2rem;
 }
 
+/* Having a flex container on two buttons */
 .display_btns {
   display: flex;
   width: 80%;
@@ -150,6 +155,7 @@
   margin-top: 2rem;
 }
 
+/* More info button */
 .more {
   flex: 1;
   margin: auto;
@@ -159,6 +165,7 @@
 
 }
 
+/* close project detail button*/
 .exit {
   flex: 1;
   background-color: rgb(255, 130, 130);
