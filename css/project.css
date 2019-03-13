@@ -175,7 +175,13 @@
   max-width: 150px;
 }
 
-
+.project_filter_label {
+  font-size: .8rem;
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-bottom: .5rem;
+}
 
 
 

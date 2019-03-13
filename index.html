@@ -5,7 +5,7 @@
         <title>Leo Ruan</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+        <link rel="apple-touch-icon" href="src/logo.png">
 
         <!-- Default css/fonts -->
         <link rel="stylesheet" href="css/defaultCss/normalize.css">
@@ -52,7 +52,7 @@
         </div>
 
         <div class="navTitleContainer">
-          <h1 class="navTitle">leor</p>
+          <h1 class="navTitle">leor</h1>
         </div>
       </nav>
 
@@ -180,14 +180,17 @@
 
         <section id="project">
           <h2 class="heading_1">Project</h2>
-          <label for="skill_options"></label>
-          <select class="skill_options" id="skill_options">
-            <option value="all" class="options">All Projects</option>
-            <option value="frontend" class="options">Front End Projects</option>
-            <option value="backend" class="options">Back End Projects</option>
-            <option value="mobile" class="options">Mobile Projects</option>
-            <option value="game" class="options">Game Projects</option>
-          </select>
+          <form>
+            <label for="skill_options" class="project_filter_label">Filter Project</label>
+            <select class="skill_options" id="skill_options">
+              <option value="all" class="options">All Projects</option>
+              <option value="frontend" class="options">Front End Projects</option>
+              <option value="backend" class="options">Back End Projects</option>
+              <option value="mobile" class="options">Mobile Projects</option>
+              <option value="game" class="options">Game Projects</option>
+            </select>
+          </form>
+
 
           <!-- Projects will be added dynamically -->
           <div class="project_display">
@@ -222,7 +225,7 @@
               <textarea class="text_input contact_input contact_textarea" placeholder="Message" id="message"></textarea>
             </div>
 
-            <button class="basic_btn contact_submit">Submit</button>
+            <button class="basic_btn contact_submit" type="submit">Submit</button>
 
           </form>
 
