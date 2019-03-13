@@ -138,38 +138,6 @@
   margin-bottom: 0 !important;
 }
 
-.text_input {
-  background-color: rgba(57, 63, 84, 0.8);
-  border: none;
-  outline: none;
-  border-radius: 2px;
-  padding: .5rem;
-  color: white;
-
-  display: block;
-  margin: auto;
-
-  max-width: 140px;
-
-  transition: border-top .2s, border-left .2s, border-bottom .2s, border-right .2s, background-color .2s;
-}
-
-/* Input colour change code mordified from https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder */
-.text_input::placeholder {
-  color: rgba(147, 156, 174);
-}
-
-.text_input:focus, .text_input:hover {
-  background-color: white;
-
-  border-top: 2px dotted red;
-  border-left: 2px dotted green;
-  border-bottom: 4px solid blue;
-  border-right: 2px dotted orange;
-
-  color: black;
-}
-
 /*.text_input_button {
   display: inline;
   background-color: transparent;

@@ -57,7 +57,7 @@ function smoothScroll() {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: (target.offset().top - 20)
+          scrollTop: (target.offset().top - 190)
         }, 500, function() {
           // Callback after animation
           // Must change focus!

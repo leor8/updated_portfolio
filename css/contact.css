@@ -1,0 +1,35 @@
+#contact {
+  margin-top: 5rem;
+}
+
+.contact_form > div {
+  /*border: 2px solid black;*/
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+
+.contact_form_label {
+  font-size: .9rem;
+  display: block;
+  margin: auto;
+
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.contact_input {
+  width: 265px;
+  max-width: 265px;
+  margin-bottom: 2rem;
+}
+
+.contact_textarea {
+  height: 120px;
+}
+
+.messageReceived > p {
+  text-align: center;
+  margin-bottom: 3rem;
+}

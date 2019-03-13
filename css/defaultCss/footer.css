@@ -1,37 +1,46 @@
+
 footer {
+  /*Making footer takes the whole width of the screen*/
   display: block;
   height: 200px;
   width: 100%;
   background-color: black;
 
   margin-top: 8rem;
-
-  /*margin-bottom: 28rem;*/
 }
 
 .return_top_btn {
+
+  /*Centering the return to top button*/
   display: block;
   margin: auto;
   background-color: red;
   height: 50px;
   width: 50px;
 
+  /* Rotating return to top button for 45 degree*/
   transform: rotate(45deg);
-  text-decoration: none;
 
+  /* Removing outline and underline from a tag*/
+  text-decoration: none;
+  outline: none;
+  /* Positioning button using top for animation purposes*/
   position: relative;
   top: -1.6rem;
   transition: top .5s;
 }
 
-.return_top_btn:hover {
+/* Making button go up a little when hover/focus */
+.return_top_btn:hover, .return_top_btn:focus {
   top: -2.6rem;
 }
 
 .fab, .fas, .far {
+  /* Override Fontawesome default css*/
   display: block !important;
   text-align: center;
 }
+
 
 .fa-angle-double-up {
   color: white;
@@ -41,9 +50,11 @@ footer {
   margin-right: .55rem;
   padding-top: .4rem;
 
+  /*Rotate icon against the rotation of its container */
   transform: rotate(-45deg);
 }
 
+/* footer icons flex container*/
 .footer_icons {
   display: flex;
   max-width: 300px;
@@ -52,6 +63,7 @@ footer {
   margin-top: 1rem;
 }
 
+/*footer icons flex item*/
 .footer_icon {
   flex: 1;
   margin-left: .5rem;
@@ -59,31 +71,32 @@ footer {
   text-decoration: none;
 
   cursor: pointer;
+  outline: none;
   background-color: rgb(100, 100, 100);
 
   transition: background-color .5s;
 }
 
 
-.footer_git:hover {
+.footer_git:hover, .footer_git:focus {
   background-color: red;
   position: relative;
   top: -1rem;
 }
 
-.footer_linkedin:hover {
+.footer_linkedin:hover, .footer_linkedin:focus {
   background-color: green;
   position: relative;
   top: -1rem;
 }
 
-.footer_email:hover {
+.footer_email:hover, .footer_email:focus {
   background-color: purple;
   position: relative;
   top: -1rem;
 }
 
-.footer_phone:hover {
+.footer_phone:hover, .footer_phone:hover:focus  {
   background-color: darkorange;
   position: relative;
   top: -1rem;
@@ -97,7 +110,7 @@ footer {
   margin-top: .8rem;
 }
 
-
+/* Positioning copy right p tag*/
 .copyright {
   color: white;
   font-size: .7rem;

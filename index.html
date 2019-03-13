@@ -33,6 +33,7 @@
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="src/projectsObj.js"></script>
         <script type="text/javascript" src="js/projects.js"></script>
+        <script type="text/javascript" src="js/form_submission.js"></script>
 
 
 
@@ -40,6 +41,7 @@
         <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="stylesheet" type="text/css" href="css/about.css">
         <link rel="stylesheet" type="text/css" href="css/project.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
 
 
     </head>
@@ -90,17 +92,17 @@
               <div class="hover_bk hover_about"></div>
             </a>
 
-            <a class="nav_item project" href="index.html#project" onclick="closeNav()">
+            <a class="nav_item project" href="index.html#skill_options" onclick="closeNav()">
               <div class="fading_reverse"></div>
               <h2 class="nav_item_text project_text"> PROJECTS </h2>
               <div class="hover_bk hover_project"></div>
             </a>
 
-            <li class="nav_item contact">
+            <a class="nav_item contact" href="index.html#contact" onclick="closeNav()">
               <div class="fading"></div>
               <h2 class="nav_item_text contact_text"> CONTACT </h2>
               <div class="hover_bk hover_contact"></div>
-            </li>
+            </a>
           </div>
 
         </div>
@@ -138,7 +140,7 @@
 
               <p class="display_ground_text"> Hi, I'm Leo, a full stack developer/software developer based in Vancouver BC Canada. I am extremely passion about building projects that are user-friendly and full of surprising interactions while being fully functioning. </p>
 
-              <a class="basic_btn display_ground_btn display_more" href="#project">Explore</a>
+              <a class="basic_btn display_ground_btn display_more" href="#skill_options">Explore</a>
             </div>
 
 
@@ -179,7 +181,7 @@
 
         <section id="project">
           <h2 class="heading_1">Project</h2>
-          <select class="skill_options">
+          <select class="skill_options" id="skill_options">
             <option value="all" class="options">All Projects</option>
             <option value="frontend" class="options">Front End Projects</option>
             <option value="backend" class="options">Back End Projects</option>
@@ -204,10 +206,29 @@
         <section id="contact" class="section_box">
           <h1 class="heading_1 main_headings"> Leave A Message </h1>
 
-          <form>
+          <form class="contact_form">
+            <div>
+              <label for="inquery_name" class="contact_form_label">Preferred Name: *</label>
+              <input type="text" name="inquery_name" id="inquery_name" class="text_input contact_input" placeholder="YOUR NAME">
+            </div>
+
+            <div>
+              <label for="inquery_email" class="contact_form_label">Email: *</label>
+              <input type="text" name="inquery_email" id="inquery_email" class="text_input contact_input" placeholder="EMAIL">
+            </div>
+
+            <div>
+              <label for="message" class="contact_form_label">Your Message:</label>
+              <textarea class="text_input contact_input contact_textarea" placeholder="Message" id="message"></textarea>
+            </div>
+
+            <button class="basic_btn contact_submit">Submit</button>
 
           </form>
 
+          <div class="messageReceived">
+
+          </div>
         </section>
       </main>
 
