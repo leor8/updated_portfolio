@@ -111,22 +111,22 @@ function constructingProjects(currProject, eachProject) {
     $(`.${currProject.projectClassName} > .project_hover`).toggleClass('hover_project_display');
   });
 
-  $(`.${currProject.projectClassName}`).on("touchstart focus", function(event) {
+  $(`.${currProject.projectClassName}`).on("tap", function(event) {
     /* Act on the event */
     $(`.${currProject.projectClassName} > .project_hover`).toggleClass('hover_project_display');
   });
 
-  $('.singleProeject').on('tap', function(){
-    openDetail(eachProject);
-  });
+  // $('.singleProeject').on('tap', function(){
+  //   openDetail(eachProject);
+  // });
 
   $(`.${currProject.projectClassName}`).mouseleave(function(event) {
     $(`.${currProject.projectClassName} > .project_hover`).toggleClass('hover_project_display');
   });
 
-  $(`.${currProject.projectClassName}`).on("touchend", function(event) {
-    $(`.${currProject.projectClassName} > .project_hover`).toggleClass('hover_project_display');
-  });
+  // $(`.${currProject.projectClassName}`).on("touchend", function(event) {
+  //   $(`.${currProject.projectClassName} > .project_hover`).toggleClass('hover_project_display');
+  // });
 }
 
 
