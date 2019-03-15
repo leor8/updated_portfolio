@@ -7,10 +7,10 @@
 
 /* styling the select box*/
 .skill_options {
-  border-top: 4px dotted red;
-  border-left: 4px dotted green;
-  border-bottom: 4px dotted blue;
-  border-right: 4px dotted orange;
+  border-top: 2px dotted red;
+  border-left: 2px dotted green;
+  border-bottom: 2px dotted blue;
+  border-right: 2px dotted orange;
 
   display: block;
   margin: auto;
@@ -34,10 +34,10 @@
 
 /* Setting up the style of each project*/
 .singleProeject {
-  border-top: 6px dotted red;
-  border-left: 6px dotted green;
-  border-bottom: 6px dotted blue;
-  border-right: 6px dotted orange;
+  border-top: 3px dotted red;
+  border-left: 3px dotted green;
+  border-bottom: 3px dotted blue;
+  border-right: 3px dotted orange;
 
   min-width: 250px;
   max-width: 500px;
@@ -58,10 +58,10 @@
 
 /* Project hove animation*/
 .singleProeject:hover, .singleProeject:focus {
-  border-top: 6px dotted green;
-  border-left: 6px dotted blue;
-  border-bottom: 6px dotted orange;
-  border-right: 6px dotted red;
+  border-top: 3px dotted green;
+  border-left: 3px dotted blue;
+  border-bottom: 3px dotted orange;
+  border-right: 3px dotted red;
 }
 
 /* The overlay block element on top of each project (not showing) */
@@ -70,6 +70,9 @@
   height: 0px;
   width: 0px;
   transition: width .25s;
+  /*direction: rtl;*/
+
+  text-align: center;
 }
 
 /* The overlay block element on top of each project (showing) */
@@ -78,6 +81,8 @@
   display: block;
   height: 100%;
   width: 100%;
+
+  /*direction: rtl;*/
 }
 
 /* Title when project box is hovered*/
@@ -85,6 +90,9 @@
   padding-top: 1rem;
   text-align: center;
   overflow: auto;
+  white-space: nowrap;
+
+  transition: all .25;
 }
 
 /* detail section when project box is hovered*/
@@ -96,7 +104,12 @@
 /* stack info when project box is hovered*/
 .project_stack {
   text-align: center;
+  white-space: nowrap;
+  /*overflow: auto;*/
+}
 
+.project_details > button {
+  white-space: nowrap;
 }
 
 /* When learnmore is not clicked*/

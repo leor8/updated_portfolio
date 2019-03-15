@@ -10,7 +10,7 @@ let allProjects = {
     projectHTML: "projects/marketBuddy.html"
   } ,
   1: {
-    projectName: "Market Buddy Android",
+    projectName: "Market Buddy",
     projectClassName: "marketbuddyAndroid",
     projectDescription: "A companion android app for Market Buddy built with android studio and java",
     projectImageURL: "src/android_market.png",

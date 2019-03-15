@@ -1,4 +1,8 @@
 /*Resetting browswer defaults*/
+/** {
+  box-sizing: border-box;;
+}*/
+
 body {
   margin: 0;
   padding: 0;
@@ -65,19 +69,19 @@ code {
   outline: none;
   margin-bottom: 1.5rem;
 
-  border-top: 4px dotted red;
-  border-left: 4px dotted green;
-  border-bottom: 4px dotted blue;
-  border-right: 4px dotted orange;
+  border-top: 2px dotted red;
+  border-left: 2px dotted green;
+  border-bottom: 2px dotted blue;
+  border-right: 2px dotted orange;
 
   transition: border-top .25s, border-right .5s, border-bottom .75s, border-left 1s;
 }
 
 .basic_btn:hover, .basic_btn:focus {
-  border-top: 4px solid green;
-  border-left: 4px solid red;
-  border-bottom: 4px solid orange;
-  border-right: 4px solid blue;
+  border-top: 2px solid green;
+  border-left: 2px solid red;
+  border-bottom: 2px solid orange;
+  border-right: 2px solid blue;
 }
 
 .basic_btn:active {
@@ -99,25 +103,20 @@ code {
   border-bottom: 2px dotted blue;
   border-right: 2px dotted orange;
 
-  box-shadow: 6px 6px rgb(192, 192, 192);
+  /*box-shadow: 6px 6px rgb(192, 192, 192);*/
 
   transition: border-top .1s, border-right .25s, border-bottom .35s, border-left .4s, box-shadow .1s;
 }
 
 .section_box:hover, .section_box:focus {
 
-  border-top: 8px dotted green;
-  border-left: 8px dotted red;
-  border-bottom: 8px dotted orange;
-  border-right: 8px dotted blue;
-
-  box-shadow: 12px 12px rgb(212, 212, 212);
+  box-shadow: 4px 4px rgb(192, 192, 192);
 }
 
 
 .text_input {
-  background-color: rgba(57, 63, 84, 0.8);
-  border: none;
+  background-color: rgba(157, 163, 184, 0.8);
+  border: 1px solid rgba(157, 163, 184, 0.8);
   outline: none;
   border-radius: 2px;
   padding: .5rem;
@@ -128,21 +127,17 @@ code {
 
   max-width: 140px;
 
-  transition: border-top .2s, border-left .2s, border-bottom .2s, border-right .2s, background-color .2s;
+  transition: background-color .2s;
 }
 
 /* Input colour change code mordified from https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder */
 .text_input::placeholder {
-  color: rgba(147, 156, 174);
+  color: rgba(20, 156, 174);
 }
 
 .text_input:focus, .text_input:hover {
   background-color: white;
-
-  border-top: 2px dotted red;
-  border-left: 2px dotted green;
-  border-bottom: 4px solid blue;
-  border-right: 2px dotted orange;
+  border: 1px solid black;
 
   color: black;
 }
