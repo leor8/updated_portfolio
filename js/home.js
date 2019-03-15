@@ -14,7 +14,7 @@ $(document).ready(function() {
       $('.display_ground_hide_about').removeClass('display_ground_about');
 
       $('.display_ground_hide_frontend').toggleClass('display_ground_frontend');
-      $('.frontend').css('border', '4px dotted black');
+      $('.frontend').css('border', '2px dotted black');
       $('.backend').css('border', 'none');
       $('.mobile').css('border', 'none');
       $('.game').css('border', 'none');
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
       $('.display_ground_hide_backend').toggleClass('display_ground_backend');
 
-      $('.backend').css('border', '4px dotted black');
+      $('.backend').css('border', '2px dotted black');
       $('.frontend').css('border', 'none');
       $('.mobile').css('border', 'none');
       $('.game').css('border', 'none');
@@ -68,7 +68,7 @@ $(document).ready(function() {
 
       $('.display_ground_hide_android').toggleClass('display_ground_android');
 
-      $('.mobile').css('border', '4px dotted black');
+      $('.mobile').css('border', '2px dotted black');
       $('.frontend').css('border', 'none');
       $('.backend').css('border', 'none');
       $('.game').css('border', 'none');
@@ -97,7 +97,7 @@ $(document).ready(function() {
       $('.mobile').css('border', 'none');
       $('.frontend').css('border', 'none');
       $('.backend').css('border', 'none');
-      $('.game').css('border', '4px dotted black');
+      $('.game').css('border', '2px dotted black');
 
       mobileClicked = false;
       frontendClicked = false;
