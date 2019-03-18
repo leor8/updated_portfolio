@@ -47,7 +47,14 @@ function openDetail(projectIndex) {
   let $detail = `<section class="project_detail_section">
                     <div class="project_image"></div>
                     <h3> ${currProject.projectName} </h3>
-                    <p> ${currProject.projectDescription} </p>
+                    <div class="project_analize">
+                      <h4 class="project_ana_title">Project Overview</h4>
+                      <p class="project_ana_text">${currProject.projectDescriptionOverview}</p>
+                      <h4 class="project_ana_title">Project Challenges</h4>
+                      <p class="project_ana_text">${currProject.projectDescriptionChallenge}</p>
+                      <h4 class="project_ana_title">Project Outcomes</h4>
+                      <p class="project_ana_text">${currProject.projectDescriptionLearned}</p>
+                    </div>
                     <div class="display_btns">
                       <button class="more basic_btn">More</button>
                       <button class="exit basic_btn">Close</button>
@@ -57,14 +64,12 @@ function openDetail(projectIndex) {
 
   $(".project_detail_hide").append($detail);
 
-  // <section class="project_detail_section">
-  //             <div class="project_image"></div>
-  //             <h3>Market Buddy</h3>
-  //             <p>Market Buddy is an application that allows user to select grocery products </p>
-  //           </section>
 
   $(".project_detail_hide").toggleClass('display_project_detail');
   $(".project_image").css("background-image", `url("${currProject.projectImageURL}"`);
+  $(".more").on('click touch', function() {
+    window.open(currProject.projectGitURL);
+  });
   $(".exit").on('click touch', function() {
     $(".project_detail_hide").removeClass('display_project_detail');
   })
